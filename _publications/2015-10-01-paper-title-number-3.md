@@ -1,14 +1,28 @@
 ---
-title: "Paper Title Number 3"
-collection: publications
+title: "In-Progress Projects"
+collection: projects
 category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+permalink: /projects/in-progress-projects
+excerpt: 'In-progress Automation projects which are currently in the development phase.'
+date: 2024-10-01
+venue: 'Github'
+#slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
+#paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+#citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+
+A few upcoming projects currently in the automation framework development phase:
+
+BDD Automation Framework Implementation Using Selenium, Python, and Page Object Model (POM)
+======
+<img src='/images/coming_soon.png' width="600" height="400">
+
+BDD Automation Framework with Rest Assured, Selenium, and Python
+======
+<img src='/images/coming_soon.png' width="600" height="400">
+
+
+Mobile Application Automation with Appium and Python
+======
+<img src='/images/coming_soon.png' width="600" height="400">
