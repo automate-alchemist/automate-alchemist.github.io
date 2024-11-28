@@ -1,6 +1,6 @@
 # Automate Alchemist
 
-Welcome to the **Automate Alchemist** portfolio repository! This repository hosts the code for my portfolio website: [automatealchemist.github.io](https://automatealchemist.github.io/).
+Welcome to the **Automate Alchemist** portfolio repository! This repository hosts the code for my portfolio website: [automate-alchemist.github.io](https://automate-alchemist.github.io/).
 
 This website showcases:  
 
@@ -19,8 +19,8 @@ This website showcases:
 - **Platform Links**:  
   Links to my profiles and channels on various platforms.  
 
-Visit the website to explore more: [automatealchemist.github.io](https://automatealchemist.github.io/).
+Visit the website to explore more: [automate-alchemist.github.io](https://automate-alchemist.github.io/).
 
 
 
-![Automate Alchemist Homepage](https://github.com/automatealchemist/automatealchemist.github.io/blob/master/images/homepage.png?timestamp=20241120)
+![Automate Alchemist Homepage](https://github.com/automate-alchemist/automate-alchemist.github.io/blob/master/images/homepage.png?timestamp=20241120)
