@@ -1,9 +1,9 @@
 ---
-title: "OrangeHRM Live Through PyTest Framework Using POM"
+title: "Automation Practice Website With Selenium Python & BDD"
 collection: projects
 category: manuscripts
-permalink: /projects/orangehrm-live-project
-excerpt: 'This Github Repo contains code for Automation of OrangeHRM Live Website which is a web application for HR Management.'
+permalink: /projects/automation-practice-website
+excerpt: 'This Github Repo contains code for Automation of Website which is a web application for automation practice.'
 date: 2024-10-01
 venue: 'Github'
 #slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
