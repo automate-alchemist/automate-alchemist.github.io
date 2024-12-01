@@ -1,6 +1,6 @@
 ---
 title: "Various SDLC Models"
-excerpt: "Mind map of the Pytest framework, showing all the components required for designing the framework."
+excerpt: "Mind map of the major software development life-cycle models."
 collection: testing-mindspace
 ---
 

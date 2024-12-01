@@ -72,7 +72,7 @@ When a new build is released by developing team for testing, the testing should 
 * Outcome: Ensures the system is stable and ready for real-world use by customers without critical issues.
 
 
-The order of testing may vary from team to team or organization to organization. However, at the end of the day, regardless of the order followed, the ultimate goal remains the same: ensuring the quality meets the specified requirements.
+The order of testing may vary from team to team or organization to organization. However, at the end of the day, regardless of the order followed, the ultimate goal should always be to ensure that the quality meets the business requirements.
 
 In addition to the outlined testing types, teams can also incorporate other approaches, such as:
 
