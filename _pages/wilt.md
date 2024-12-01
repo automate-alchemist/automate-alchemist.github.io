@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "What I Learned Today"
-permalink: /wilt/
+permalink: /november-wilt/
 author_profile: true
 ---
 <b>Date: 30th November 2024</b>
@@ -107,9 +107,4 @@ Along with that, mind-maps were pending for some of the topics for my portfolio 
 * Personal Reflection: As I worked with lists today, I reflected on how coding teaches problem-solving in a structured way. Just like modifying elements in a list, I’m learning how to handle and adapt to changing situations in my own life, whether it's at work or in personal projects. The ability to manipulate and modify things efficiently in code translates to an ongoing effort to improve how I approach challenges and adapt to new information.
 
 
-{% include base_path %}
 
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
