@@ -8,11 +8,10 @@ date: 2024-10-10
 location: "City"
 ---
 
-**A **
 
 Introduction:
 =====
-Last year, as a tester working on an IoT project, I was tasked with testing the implementation of a new search feature on an existing page. After completing testing on the test environment, we moved to the UAT environment and, after successful sanity testing, deployed the feature to production. However, an issue with the search bar appeared that night, and I learned some valuable lessons from troubleshooting the problem.
+Last year, as a tester on an IoT project, I was tasked with testing the implementation of a new search feature on an existing page. After completing testing on the test environment, we moved to the UAT environment and, after successful sanity testing, deployed the feature to production. However, an issue with the search bar appeared that night, and I learned some valuable lessons from troubleshooting the problem.
 
 
 Sanity Testing on UAT:
