@@ -1,13 +1,14 @@
 ---
 title: "From Cache Confusion to Clear Solutions "
 collection: testing-musings
-type: "The Importance of Cache Management Learned from a Missing Search Bar"
+type: "Cache"
 permalink: /testing-musings/an-unforgettable-cookie
 venue: "Bug"
 date: 2024-10-10
 location: "City"
 ---
 
+**The Importance of Cache Management Learned from a Missing Search Bar**
 
 Introduction:
 =====
