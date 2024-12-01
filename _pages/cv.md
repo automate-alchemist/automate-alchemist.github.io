@@ -17,19 +17,13 @@ redirect_from:
 Work experience
 ======
 
-<b>Associate Quality Analyst Trainee - </b> 
-Copper Mobile Pvt. Ltd. (Sept. 2021 - Dec. 2021)
+<b>SDET (Software Development Engineer in Test) - </b>
+Skeps (Jun. 2024 - Present)
 
-* Created and executed test cases.
-* Conducted sanity, functional, and regression testing on web and mobile applications.
-* Performed API testing using Postman and Swagger.
+* Conduct grey-box and white-box testing, reviewing code and developer pull requests for accuracy.
+* Deployed builds via Jenkins in CI/CD pipelines, optimizing test coverage and system efficiency.
+* Performed API and webhook testing to validate system functionalities, ensuring seamless loan facilitation.
 
-<b>Associate Quality Analyst - </b>
-Copper Mobile Pvt. Ltd. (Dec. 2021 - Feb. 2023)
-   
-* Developed and executed test cases for cross-platform mobile and web applications.
-* Managed bug defect reports in JIRA and collaborated with developers to resolve issues efficiently.
-* Presented testing outcomes in client demos and integrated feedback to enhance product quality.
 
 <b>Analyst - </b>
 Studiographene (Mar. 2023 - Jun. 2024)
@@ -38,12 +32,21 @@ Studiographene (Mar. 2023 - Jun. 2024)
 * Executed functional, API, and regression testing for web and mobile applications to ensure quality standards.
 * Monitored and reported quality KPIs, providing actionable insights to stakeholders.
 
-<b>SDET (Software Development Engineer in Test) - </b>
-Skeps (Jun. 2024 - Present)
 
-* Conduct grey-box and white-box testing, reviewing code and developer pull requests for accuracy.
-* Deployed builds via Jenkins in CI/CD pipelines, optimizing test coverage and system efficiency.
-* Performed API and webhook testing to validate system functionalities, ensuring seamless loan facilitation.
+<b>Associate Quality Analyst - </b>
+Copper Mobile Pvt. Ltd. (Dec. 2021 - Feb. 2023)
+   
+* Developed and executed test cases for cross-platform mobile and web applications.
+* Managed bug defect reports in JIRA and collaborated with developers to resolve issues efficiently.
+* Presented testing outcomes in client demos and integrated feedback to enhance product quality.
+
+<b>Associate Quality Analyst Trainee - </b> 
+Copper Mobile Pvt. Ltd. (Sept. 2021 - Dec. 2021)
+
+* Created and executed test cases.
+* Conducted sanity, functional, and regression testing on web and mobile applications.
+* Performed API testing using Postman and Swagger.
+
 
 Skills
 ======
@@ -51,6 +54,7 @@ Skills
   *  UI Automation Testing
   *  Functional & API Testing
   *  White Box Testing
+  *  Accessibility Testing
 
 * <b>Soft Skills</b>
   *  Critical Thinking
@@ -61,6 +65,9 @@ Skills
   * <b>Automation & Testing:</b> Selenium, Pytest, BDD
   * <b>Programming & Scripting:</b> Python
   * <b>Version Control & CI/CD:</b> Git, Jenkins & Docker
+  * <b>AI Based Testing Tools:</b> Katalon, Postbot
+  * <b>Gen AI Based Tools:</b> Chat-GPT,Co-Pilot,Claude
+
 
 <a href="/files/Ujjwal_Kumar_Singh_3_Years_Experience_QA_Resume.pdf" download>Download Resume</a>
 

@@ -30,9 +30,7 @@ author_profile: true
 
 * Learning: Write test cases that are precise and align with both business requirements and user needs.
 
-* Description: Recently, in my current project at work, I was assigned a ticket to write test cases. Since the ticket was critical, I quickly started by going through the requirements. After understanding them, I drafted the test cases and submitted them for review. During the review, my manager pointed out that the test cases were too generic, focusing primarily on high-level scenarios. It became apparent that some critical business requirements and user-specific needs were not fully addressed.
-
-This oversight required me to rework the test cases. Revisiting the requirements, engaging with stakeholders, and seeking clarity helped me refine the test cases to ensure they were comprehensive and aligned with both business objectives and user expectations.
+* Description: Recently, in my current project at work, I was assigned a ticket to write test cases. Since the ticket was critical, I quickly started by going through the requirements. After understanding them, I drafted the test cases and submitted them for review. During the review, my manager pointed out that the test cases were too generic, focusing primarily on high-level scenarios. It became apparent that some critical business requirements and user-specific needs were not fully addressed. This oversight required me to rework the test cases. Revisiting the requirements, engaging with stakeholders, and seeking clarity helped me refine the test cases to ensure they were comprehensive and aligned with both business objectives and user expectations.
 
 * Key Takeaway: Effective test cases serve as a bridge between business goals and user experience. To achieve this, they must be specific, concise, and informed by a thorough understanding of requirements. Additionally, it's essential to evaluate whether the new feature impacts existing parts of the application. Identifying these areas early and designing pre-deployment test cases for impacted stages helps maintain application integrity and ensures robust testing coverage.
 

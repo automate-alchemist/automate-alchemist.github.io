@@ -20,7 +20,9 @@ redirect_from:
 * API Testing: Expertise in Rest Assured with BDD, creating robust, scalable test scripts.
 * Automation: Proficient in Selenium & Python, streamlining workflows to reduce errors and improve efficiency.
 * Skilled in Postman, JIRA, Git, Swagger.
-* Certification: ISTQB Certified (2023).
+* Certification:
+    * ISTQB Certified (July 2023).
+    * Accessibility Specialist(Wix) (Nov 2024)
 
 <b>🏅 Achievements </b>
 
