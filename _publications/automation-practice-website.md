@@ -14,6 +14,6 @@ venue: 'Github'
 
 This github repository contains automation code of Website Using Selenium and Python Through BDD Framework. This framework contains all the essential components of the framework.
 
-[Github Repo Link](https://github.com/automatealchemist/Orange_HRM_Automation_Framework){:target="_blank" rel="noopener noreferrer"}
+[Github Repo Link](https://github.com/automatealchemist/Automation-Practice-Website-with-Selenium-Python-BDD){:target="_blank" rel="noopener noreferrer"}
 
 <img src='/images/automation-website.png'>
