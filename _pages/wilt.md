@@ -105,3 +105,11 @@ Along with that, mind-maps were pending for some of the topics for my portfolio 
 * Key Takeaway: Swapping elements in Python is simple and can be done with a single line of code: a[0], a[1] = a[1], a[0].
 
 * Personal Reflection: As I worked with lists today, I reflected on how coding teaches problem-solving in a structured way. Just like modifying elements in a list, I’m learning how to handle and adapt to changing situations in my own life, whether it's at work or in personal projects. The ability to manipulate and modify things efficiently in code translates to an ongoing effort to improve how I approach challenges and adapt to new information.
+
+
+{% include base_path %}
+
+
+{% for post in site.portfolio %}
+  {% include archive-single.html %}
+{% endfor %}
