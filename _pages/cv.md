@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Education"
+title: "Work experience"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -10,12 +10,6 @@ redirect_from:
 {% include base_path %}
 
 
-* B.Tech. (Hons.) in Computer Science Engineering, 2017
-* M.S. in Mathematics, Veer Bahadur Singh Purvanchal University, 2020
-* ISTQB CTFL Certification, July 2023
-
-Work experience
-======
 
 <b>SDET (Software Development Engineer in Test) - </b>
 Skeps (Jun. 2024 - Present)
@@ -68,6 +62,12 @@ Skills
   * <b>AI Based Testing Tools:</b> Katalon, Postbot
   * <b>Gen AI Based Tools:</b> Chat-GPT,Co-Pilot,Claude
 
+
+Education
+======
+* B.Tech. (Hons.) in Computer Science Engineering, 2017
+* M.S. in Mathematics, Veer Bahadur Singh Purvanchal University, 2020
+* ISTQB CTFL Certification, July 2023
 
 <a href="/files/Ujjwal_Kumar_Singh_3_Years_Experience_QA_Resume.pdf" download>Download Resume</a>
 
