@@ -21,7 +21,7 @@ repository               : "automate-alchemist/automate-alchemist.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "pix.jpeg"
   name             : "Ujjwal Kumar Singh"
   pronouns         : # example: "she/her"  
   bio              : "Simplifying World Complexities Through Automation"
