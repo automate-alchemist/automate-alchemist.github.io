@@ -3,7 +3,7 @@ title: "From Cache Confusion to Clear Solutions "
 collection: testing-musings
 type: "Cache"
 permalink: /testing-musings/an-unforgettable-cookie
-venue: "Bug"
+venue: "Deployment"
 date: 2024-10-10
 location: "City"
 ---
