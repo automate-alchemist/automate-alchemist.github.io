@@ -4,7 +4,70 @@ title: "What I Learned Today"
 permalink: /wilt/
 author_profile: true
 ---
+<b>Date: 06th December 2024</b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
+
+
+<b>Date: 05th December 2024</b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
+
+
+<b>Date: 04th December 2024</b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
+
+
+<b>Date: 03rd December 2024</b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
+
+
+<b>Date: 02nd December 2024</b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
+
+
 <b>Date: 01st December 2024</b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
 
 
 

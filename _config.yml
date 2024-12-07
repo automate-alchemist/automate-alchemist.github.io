@@ -351,4 +351,3 @@ compress_html:
     envs: development
 
 
-theme_mode: dark
