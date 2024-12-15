@@ -5,6 +5,83 @@ permalink: /wilt/
 author_profile: true
 ---
 
+<b>14th December 2024 :  </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
+
+
+<b>13th December 2024 :  </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
+
+
+<b>12th December 2024 :  </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
+
+
+<b>11th December 2024 :  </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
+
+
+<b>10th December 2024 :  </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
+
+
+<b>09th December 2024 :  </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
+
+
+<b>08th December 2024 :  </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection: 
+
+
 <b>07th December 2024 : Exploring AI Tools and Insights on Life's Purpose </b>
 
 * Learning: Explored Hugging Face for LLMs, progressed in Andrew Ng's course, and read more from Ikigai.
