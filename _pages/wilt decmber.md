@@ -5,7 +5,7 @@ permalink: /wilt/
 author_profile: true
 ---
 
-15th December 2024 - A Day of Poetry and Testing Insights
+<b>15th December 2024 - A Day of Poetry and Testing Insights</b>
 
 * Learning: I attended the Jashn-e-Rekhta poetry event, which had been on my bucket list for a long time. I also explored more about accessibility testing.
 
