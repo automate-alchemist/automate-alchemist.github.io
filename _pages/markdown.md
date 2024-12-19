@@ -1,6 +1,6 @@
 ---
-permalink: /markdown/
-title: "Markdown"
+permalink: /exploring-ai-tools/
+title: "Exploring the World of AI Tools & Their Features"
 author_profile: true
 redirect_from: 
   - /md/
