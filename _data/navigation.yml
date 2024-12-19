@@ -26,5 +26,5 @@ main:
   - title: "WILT"
     url: /wilt/   
     
- # - title: "Guide"
-  ##  url: /markdown/
+  - title: "Guide"
+    url: /markdown/
