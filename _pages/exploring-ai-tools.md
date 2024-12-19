@@ -1,6 +1,6 @@
 ---
 permalink: /exploring-ai-tools/
-title: "Exploring the World of AI Tools & Their Features"
+title: ""
 author_profile: true
 redirect_from: 
   - /md/
