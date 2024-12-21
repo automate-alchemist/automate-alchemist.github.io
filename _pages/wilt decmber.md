@@ -5,70 +5,70 @@ permalink: /wilt/
 author_profile: true
 ---
 
-<b>21st December 2024 - </b>
+<b>21st December 2024 - Connecting, Learning, and Exploring
 
-* Learning: 
+* Learning: I attended a Test Tribe meetup in Gurgaon, met new people from the testing domain, discovered new AI tools and technologies, and explored Python documentation for fresh insights.
 
-* Description: 
+* Description: The meetup was a fantastic chance to connect with other testers and learn about cutting-edge AI tools being used in testing. Diving into Python's documentation helped me better understand its features and how to use them effectively. Combining these experiences gave me valuable knowledge about both testing practices and programming.
 
-* Key Takeaway: 
+* Key Takeaway: Networking introduces fresh perspectives, Python's documentation is a goldmine of insights, and AI tools are shaping the future of testing.
 
-* Personal Reflection:
-
-
-<b>20th December 2024 - </b>
-
-* Learning: 
-
-* Description: 
-
-* Key Takeaway: 
-
-* Personal Reflection:
+* Personal Reflection: It was an enriching day filled with learning and connections. Exploring Python alongside new testing tools reminded me of the importance of blending technical skills with industry trends.
 
 
-<b>19th December 2024 - </b>
+<b>20th December 2024 -  Building, Reading, and Exploring </b>
 
-* Learning: 
+* Learning: I worked on creating a Jenkins build, read more pages of Ikigai, and continued exploring the Japanese lifestyle.
 
-* Description: 
+* Description: Creating a Jenkins build helped me understand how to automate tasks like code integration and deployment. Reading Ikigai offered more insights into the Japanese way of living, focusing on simplicity, balance, and finding joy in daily activities. It is inspiring to see how their lifestyle emphasizes purpose and well-being.
 
-* Key Takeaway: 
+* Key Takeaway: Jenkins makes automation smoother, and Ikigai provides practical wisdom on living a meaningful and fulfilling life.
 
-* Personal Reflection:
-
-
-<b>18th December 2024 - </b>
-
-* Learning: 
-
-* Description: 
-
-* Key Takeaway: 
-
-* Personal Reflection:
+* Personal Reflection: The combination of technical work and learning about a mindful lifestyle felt refreshing. It reminded me that balancing productivity with personal growth is key to long-term satisfaction.
 
 
-<b>17th December 2024 - </b>
+<b>19th December 2024 - Reporting, Frameworks, and AI Models </b>
 
-* Learning: 
+* Learning: I worked on Allure reports, explored the Page Object Model (POM) for test automation, and continued learning about LLM (Large Language Models).
 
-* Description: 
+* Description: Allure reports make test results easy to read and visually appealing. The Page Object Model helps organize automation scripts by separating web elements and actions, making tests easier to manage and reuse. Learning about LLMs gave me more insights into how these AI models work and how they can assist in tasks like generating content or analyzing data.
 
-* Key Takeaway: 
+* Key Takeaway: Clear reporting with tools like Allure improves communication, POM simplifies automation scripts, and understanding LLMs opens up possibilities for smarter workflows.
 
-* Personal Reflection:
+* Personal Reflection: It was a productive day, combining technical learning with practical skills. Seeing how reporting, frameworks, and AI tools come together is exciting for improving both testing and productivity.
 
 
-<b>16th December 2024 - </b>
+<b>18th December 2024 - Progressing with Automation and Poetry </b>
 
-* Learning: 
+* Learning: I continued working with the BDD framework to automate a project and read more pages of Ye Meri Ghazalein Aur Ye Meri Nazmein.
 
-* Description: 
+* Description: Using the BDD framework, I made more progress in automating the project, focusing on writing tests in simple, understandable language. Reading Faraz’s poetry gave me moments to reflect on the beauty of words and emotions.
 
-* Key Takeaway: 
+* Key Takeaway: BDD makes testing more collaborative and efficient, while poetry continues to inspire me with its emotional depth and creative expression.
 
-* Personal Reflection:
+* Personal Reflection: It felt good to balance technical work with the calming influence of poetry. Both activities bring their own kind of satisfaction—one through problem-solving, the other through emotional connection.
+
+
+<b>17th December 2024 -Diving into Automation and AI Tools </b>
+
+* Learning: I explored the BDD (Behavior-Driven Development) framework, worked on automating a project, and tried out Claude, a Generative AI tool, for programming.
+
+* Description: BDD focuses on writing tests in plain language that everyone can understand, making collaboration easier. I used this framework to automate some parts of a project. Claude, the AI tool, helped me with programming tasks by generating code and giving useful suggestions.
+
+* Key Takeaway: BDD simplifies testing by making it more understandable for everyone, and AI tools like Claude can speed up programming and problem-solving.
+
+* Personal Reflection: It was exciting to work on automation and explore how AI tools can assist in coding. Combining frameworks and AI feels like a big step toward making tasks more efficient and less time-consuming.
+
+
+<b>16th December 2024 - Coding, Reading, and Exploring AI</b>
+
+* Learning: I practiced writing Python programs on arrays and strings, read more pages of Ye Meri Ghazalein, Ye Meri Nazmein, and explored how Gen AI can be used in testing processes.
+
+* Description: Writing Python programs helped me sharpen my coding skills, especially in working with arrays and strings. Reading Faraz’s poetry continued to inspire me with its emotional depth. Exploring Gen AI showed me how it can simplify and speed up testing by generating test cases and data automatically.
+
+* Key Takeaway: Coding improves problem-solving skills, poetry brings emotional insight, and Gen AI can make testing faster and smarter.
+
+* Personal Reflection: It felt great to balance technical learning, creative reading, and exploring new AI possibilities. Each activity added value in its own unique way.
 
 
 <b>15th December 2024 - A Day of Poetry and Testing Insights</b>
