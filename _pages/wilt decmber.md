@@ -5,6 +5,72 @@ permalink: /wilt/
 author_profile: true
 ---
 
+<b>21st December 2024 - </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection:
+
+
+<b>20th December 2024 - </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection:
+
+
+<b>19th December 2024 - </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection:
+
+
+<b>18th December 2024 - </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection:
+
+
+<b>17th December 2024 - </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection:
+
+
+<b>16th December 2024 - </b>
+
+* Learning: 
+
+* Description: 
+
+* Key Takeaway: 
+
+* Personal Reflection:
+
+
 <b>15th December 2024 - A Day of Poetry and Testing Insights</b>
 
 * Learning: I attended the Jashn-e-Rekhta poetry event, which had been on my bucket list for a long time. I also explored more about accessibility testing.
