@@ -1,0 +1,92 @@
+/* Custom animations */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Custom styles */
+.page__content {
+  .intro-section {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    border-radius: 15px;
+    padding: 2em;
+    margin-bottom: 2em;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+  }
+
+  .skill-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #23a6d5;
+      border-bottom: 2px solid #23a6d5;
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+    }
+  }
+
+  .achievement-item {
+    background: #f8f9fa;
+    border-left: 4px solid #23d5ab;
+    padding: 1em;
+    margin-bottom: 1em;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #e9ecef;
+      transform: scale(1.02);
+    }
+  }
+
+  .emoji-float {
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+/* Testing-themed decorative elements */
+.bug-trail {
+  position: relative;
+  &::before {
+    content: "🐛";
+    position: absolute;
+    right: 20px;
+    top: -10px;
+    animation: float 4s ease-in-out infinite;
+    font-size: 1.2em;
+  }
+}
+
+.test-case-bullet {
+  list-style: none;
+  &::before {
+    content: "✓";
+    color: #23d5ab;
+    margin-right: 10px;
+  }
+}
