@@ -10,22 +10,25 @@ redirect_from:
 <div class="test-world">
   <div class="intro-card">
     <div class="bug-cursor">🐛</div>
-    <h1>🧪 Debug Laboratory</h1>
+    <h1>🧪 Hello World!</h1>
     <div class="typewriter">
       <p>> Hi, I'm <strong>Ujjwal Kumar Singh</strong></p>
-      <p>> Quality Assurance Engineer</p>
-      <p>> Bug Hunter since 2020</p>
+      <p>> Software Tester</p>
+      <p>> Uncovering Glitches & Crafting Quality since 2021.</p>
     </div>
   </div>
 
   <div class="skills-container">
     <h2>🔧 Testing Toolkit</h2>
     <div class="skill-pills">
-      <div class="pill">Rest Assured <span class="loading-dot">.</span></div>
+      <div class="pill">Black Box Testing <span class="loading-dot">.</span></div>
       <div class="pill">Selenium <span class="loading-dot">.</span></div>
       <div class="pill">Python <span class="loading-dot">.</span></div>
       <div class="pill">API Testing <span class="loading-dot">.</span></div>
-      <div class="pill">Postman <span class="loading-dot">.</span></div>
+      <div class="pill">Mobile App Testing <span class="loading-dot">.</span></div>
+      <div class="pill">White Box Testing <span class="loading-dot">.</span></div>
+      <div class="pill">CI/CD Pipelines <span class="loading-dot">.</span></div>
+      <div class="pill">QA Documentation <span class="loading-dot">.</span></div>
     </div>
   </div>
 
