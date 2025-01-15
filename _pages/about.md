@@ -21,12 +21,11 @@ redirect_from:
   <div class="skills-container">
     <h2>🔧 Testing Toolkit</h2>
     <div class="skill-pills">
-      <div class="pill">Black Box Testing <span class="loading-dot">.</span></div>
+      <div class="pill">Grey Box Testing <span class="loading-dot">.</span></div>
       <div class="pill">Selenium <span class="loading-dot">.</span></div>
       <div class="pill">Python <span class="loading-dot">.</span></div>
       <div class="pill">API Testing <span class="loading-dot">.</span></div>
       <div class="pill">Mobile App Testing <span class="loading-dot">.</span></div>
-      <div class="pill">White Box Testing <span class="loading-dot">.</span></div>
       <div class="pill">CI/CD Pipelines <span class="loading-dot">.</span></div>
       <div class="pill">QA Documentation <span class="loading-dot">.</span></div>
     </div>

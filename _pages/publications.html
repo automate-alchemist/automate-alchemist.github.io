@@ -5,6 +5,13 @@ permalink: /projects/
 author_profile: true
 ---
 
+<!-- Include the new CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/project-cards.css' | relative_url }}">
+
+<!-- Include the React component -->
+<script src="{{ '/assets/js/ProjectCard.js' | relative_url }}"></script>
+
+
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
