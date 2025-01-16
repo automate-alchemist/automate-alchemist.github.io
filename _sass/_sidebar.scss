@@ -1,108 +1,52 @@
-/* ==========================================================================
-   SIDEBAR
-   ========================================================================== */
-
-/*
-   Default
-   ========================================================================== */
-
+/* Enhanced sidebar styling */
 .sidebar {
-  -webkit-transform: translate3d(0, 0 , 0);
-          transform: translate3d(0, 0 , 0);
-
   @include clearfix();
   margin-bottom: 1em;
-
-  @media screen and (min-width: $sidebar-screen-min-width) {
-    height: 100vh;
-    overflow-y: auto;               // Add scrollbar if the sidebar is too long
-    position: fixed;
-    padding-top: $masthead-height;
-  }
-
+  
   @include breakpoint($large) {
-    @include span(2 of 12);
-    opacity: 1;
-    -webkit-transition: opacity 0.2s ease-in-out;
-            transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 1;
+    float: left;
+    width: calc(#{$right-sidebar-width-narrow} - 1em);
+    &.sticky {
+      overflow-y: auto;
+      height: calc(100vh - 2em);
     }
   }
 
   @include breakpoint($x-large) {
-    max-width: $sidebar-link-max-width;
-    padding-right: 0;
+    width: calc(#{$right-sidebar-width} - 1em);
   }
+}
 
-  h2, h3, h4, h5, h6 {
-    margin-bottom: 0;
-    font-family: $sans-serif-narrow;
-  }
+.author__avatar {
+  display: table-cell;
+  vertical-align: top;
+  width: 36px;
+  height: 36px;
 
-  h3, h4 {
-    font-size: $type-size-5;
-  }
-
-  p, li {
-    font-family: $sans-serif;
-    font-size: $type-size-6;
-    line-height: 1.5;
+  @include breakpoint($large) {
+    display: block;
+    width: auto;
+    height: auto;
+    text-align: center;
   }
 
   img {
-    width: 100%;
-  }
-}
+    max-width: 180px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 
-.sidebar__right {
-  margin-bottom: 1em;
-
-  @include breakpoint($large) {
-    position: relative;
-    float: right;
-    width: $right-sidebar-width-narrow;
-    margin-left: span(0.5 of 12);
-    z-index: 10;
-  }
-
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
-  }
-}
-
-/*
-   Author profile and links
-   ========================================================================== */
-
-   .author__avatar {
-    display: table-cell;
-    vertical-align: top;
-    width: 36px;
-  
     @include breakpoint($large) {
-      display: block;
-      width: auto;
-      height: auto;
-    }
-  
-    img {
-      width: 36px;
-      height: 36px;
-      object-fit: cover; // Ensures proportional cropping
-      border-radius: 50%; // Makes it circular
-      max-width: none;
-  
-      @include breakpoint($large) {
-        width: auto;
-        height: auto;
-        max-width: 175px;
-        padding: 5px;
-        border: 1px solid $border-color;
+      padding: 5px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
       }
     }
   }
+}
 
 .author__content {
   display: table-cell;
@@ -116,31 +60,15 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    text-align: center;
   }
 }
 
 .author__name {
-  margin: 0;
-
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-.sidebar .author__name {
-  font-family: $sans-serif;
-  font-size: $type-size-5;
-}
-
-.sidebar .author__desktop {
-  display: none;
-  @media screen and (min-width: 1024px) {
-    display: block;
-  }
-}
-
-.author__pronouns {
-  margin: 0;
+  margin: 20px 0 10px;
+  font-size: 1.3em;
+  color: $primary-color;
+  font-weight: 600;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -150,7 +78,10 @@
 
 .author__bio {
   margin: 0;
-
+  font-size: 0.9em;
+  font-style: italic;
+  line-height: 1.5;
+  
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -161,23 +92,23 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $sans-serif;
+  font-size: $type-size-5;
+  font-weight: normal;
   z-index: 10;
   position: relative;
   cursor: pointer;
 
-  li:last-child {
-    a {
-      margin-bottom: 0;
-    }
-  }
-
   @include breakpoint($large) {
     display: block;
+    padding-top: 20px;
   }
 
   button {
     margin-bottom: 0;
+    padding: 0.5em 1em;
+    border: 0;
+    border-radius: $border-radius;
+    background-color: $lighter-gray;
 
     @include breakpoint($large) {
       display: none;
@@ -190,14 +121,13 @@
   position: absolute;
   right: 0;
   margin-top: 15px;
-  padding: 10px;
+  margin-bottom: 15px;
   list-style-type: none;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   z-index: -1;
-  box-shadow: 0 0 10px rgba(#000, 0.25);
-  cursor: default;
 
   @include breakpoint($large) {
     display: block;
@@ -245,20 +175,77 @@
 
   li {
     white-space: nowrap;
+    margin-bottom: 8px;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateX(5px);
+    }
   }
 
   a {
-    display: block;
-    margin-bottom: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 8px;
     color: inherit;
-    font-size: $type-size-5;
     text-decoration: none;
+    background: $lighter-gray;
+    transition: all 0.3s ease;
 
     &:hover {
-      text-decoration: underline;
+      background: lighten($primary-color, 45%);
+      color: $primary-color;
     }
+
+    /* Platform-specific hover states */
+    &[href*="github.com"]:hover {
+      background: #24292e;
+      color: white;
+    }
+
+    &[href*="linkedin.com"]:hover {
+      background: #0077B5;
+      color: white;
+    }
+
+    &[href*="medium.com"]:hover {
+      background: #00ab6c;
+      color: white;
+    }
+
+    &[href*="youtube.com"]:hover {
+      background: #ff0000;
+      color: white;
+    }
+
+    &[href*="t.me"]:hover {
+      background: #0088cc;
+      color: white;
+    }
+
+    i {
+      margin-right: 10px;
+      color: $primary-color;
+      font-size: 1.1em;
+      width: 20px;
+      text-align: center;
+    }
+  }
+}
+
+/* Location badge styling */
+.author__urls .location {
+  background: lighten($primary-color, 45%);
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 10px 0;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9em;
+
+  i {
+    color: $primary-color;
+    margin-right: 5px;
   }
 }
