@@ -1,7 +1,7 @@
 .sidebar {
   margin: 0;
-  padding: 1rem;
-  width: 250px;
+  padding: 0.75rem;
+  width: 240px;
   background-color: #fff;
   border-right: 1px solid #e9ecef;
   
@@ -14,17 +14,18 @@
 }
 
 .author__avatar {
-  width: 120px;
-  height: 120px;
+  width: 110px; // Reduced size
+  height: 110px; // Reduced size
   margin: 0.5rem auto;
   position: relative;
-  overflow: hidden;
+  border-radius: 50%;
   
   img {
-    width: 100%;
-    height: 100%;
+    width: 110px; // Fixed size to prevent cropping
+    height: 110px; // Fixed size to prevent cropping
     border-radius: 50%;
     object-fit: cover;
+    object-position: center; // Centers the image content
   }
 }
 
@@ -32,24 +33,25 @@
   margin: 0.5rem 0;
   text-align: center;
   font-weight: 500;
+  font-size: 0.95rem; // Smaller text
 }
 
 .author__bio {
   margin: 0 0 0.5rem;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem; // Smaller text
+  line-height: 1.4;
 }
 
+// Removed box from location
 .location {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 0.75rem;
+  justify-content: center;
+  gap: 0.25rem;
   margin: 0.5rem 0;
-  background-color: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 4px;
-  font-size: 0.9rem;
+  font-size: 0.85rem; // Smaller text
+  color: #666;
 }
 
 .author__urls {
@@ -58,23 +60,24 @@
   list-style: none;
   
   li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem; // Reduced gap
   }
   
   a {
     display: flex;
     align-items: center;
-    padding: 0.5rem 0.75rem;
+    padding: 0.4rem 0.6rem; // Smaller boxes
     background-color: #f8f9fa;
     border: 1px solid #e9ecef;
     border-radius: 4px;
     color: #495057;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.85rem; // Smaller text
     
     i, svg {
-      margin-right: 0.5rem;
-      width: 16px;
+      margin-right: 0.4rem;
+      width: 14px; // Smaller icons
+      height: 14px; // Smaller icons
     }
     
     &:hover {
@@ -85,12 +88,12 @@
 
 .follow {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 0;
+  padding: 0.4rem 0.8rem;
+  margin: 0.35rem 0;
   background-color: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 4px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   
   &:hover {
     background-color: #e9ecef;
