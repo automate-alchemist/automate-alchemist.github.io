@@ -4,8 +4,15 @@
   width: 240px;
   background-color: #fff;
   border-right: 1px solid #e9ecef;
-  display: flex;
-  flex-direction: column;
+  min-height: calc(100vh - 1.5rem); // Add this line only
+  
+  @media (min-width: 1024px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+  }
+}
   
   @media (min-width: 1024px) {
     position: fixed;
