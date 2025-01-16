@@ -25,7 +25,7 @@ author:
   name             : "Ujjwal Kumar Singh"
   pronouns         : # example: "she/her"  
   bio              : "Simplifying World Complexities Through Automation"
-  location         : "Gurgaon"
+  #location         : "Gurgaon"
   employer         : # "Red Brick University"
   uri              : # URL
   email            : "ujjwalsingh0407@gmail.com" 
