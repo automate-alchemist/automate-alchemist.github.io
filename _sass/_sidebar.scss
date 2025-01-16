@@ -22,18 +22,18 @@ $sidebar-width: 240px;
 
 .author {
   &__avatar {
-    width: 150px; /* Increased size */
-    height: 150px; /* Increased size */
+    width: 180px; /* Increased size */
+    height: 180px; /* Increased size */
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid #e9ecef; /* Single visible boundary */
-    margin: 0 auto 1rem; /* Adjusted margin for better spacing */
+    margin: 0 auto 1rem;
 
     img {
-      width: 100%;
-      height: auto; /* Maintain aspect ratio */
-      object-fit: cover; /* Ensure proper scaling */
-      object-position: center 15%; /* Position the face */
+       width: 100%;
+      height: 100%; /* Ensures the image fills the circle */
+      object-fit: cover; /* Prevent distortion */
+      object-position: center 15%;
     }
   }
 
