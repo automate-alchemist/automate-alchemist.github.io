@@ -1,5 +1,5 @@
 // Variables
-$nav-height: 70px; // Adjust this to match your navigation height
+$nav-height: 70px;
 $sidebar-width: 240px;
 
 .sidebar {
@@ -17,30 +17,34 @@ $sidebar-width: 240px;
   
   // Sidebar content wrapper
   &__inner {
-    padding-top: $nav-height; // This ensures content starts below navigation
+    padding-top: $nav-height;
   }
   
   // Author section
- .author {
-  &__avatar {
-    width: 120px;  // Increased from 90px
-    height: 120px; // Increased from 90px
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid #e9ecef;
-    margin: 0 auto 0.75rem; // Added margin: 0 auto to center
-    position: relative; // Added for image positioning
-    transform: translateY(-50%); // This will align the top with the menu line
+  .author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.75rem;
     
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top; // This ensures face isn't cropped from top
-      position: relative; // Added for better image control
+    &__avatar {
+      width: 120px;  // Increased size
+      height: 120px; // Increased size
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #e9ecef;
+      margin: 0 auto 0.75rem;
+      position: relative;
+      transform: translateY(-50%);
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+      }
     }
-  }
-}
+    
     &__name {
       font-size: 1rem;
       font-weight: 500;
@@ -59,7 +63,7 @@ $sidebar-width: 240px;
   }
 }
 
-// Follow button - centered positioning
+// Follow button
 .follow {
   display: block;
   width: max-content;
