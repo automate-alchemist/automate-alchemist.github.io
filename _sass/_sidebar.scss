@@ -20,6 +20,12 @@ $sidebar-width: 240px;
   }
   
   .author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.75rem;
+    margin-top: -30px;
+    
     &__avatar {
       width: 120px;
       height: 120px;
@@ -32,11 +38,10 @@ $sidebar-width: 240px;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center 30%; // Adjusted from 35% to 30% to match LinkedIn
-        transform: scale(1.2); // Increased from 1.1 to 1.2 to show more of the face
+        object-position: center 30%;
+        transform: scale(1.2);
       }
     }
-}
     
     &__name {
       font-size: 1rem;
