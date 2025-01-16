@@ -18,8 +18,9 @@ $sidebar-width: 240px;
   &__inner {
     padding-top: $nav-height;
   }
-  
-  .author {
+}
+
+.author {
   &__avatar {
     width: 120px;
     height: 120px;
@@ -32,27 +33,25 @@ $sidebar-width: 240px;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 40%; // Changed to 40% to move the face down
-      transform: scale(1.15); // Reduced scale to prevent excessive cropping
+      object-position: center 40%;
+      transform: scale(1.15);
     }
   }
-}
-    
-    &__name {
-      font-size: 1rem;
-      font-weight: 500;
-      margin: 0.5rem 0;
-      color: #212529;
-      text-align: center;
-    }
-    
-    &__bio {
-      font-size: 0.85rem;
-      color: #6c757d;
-      text-align: center;
-      margin: 0.5rem 0;
-      line-height: 1.4;
-    }
+  
+  &__name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: #212529;
+    text-align: center;
+  }
+  
+  &__bio {
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-align: center;
+    margin: 0.5rem 0;
+    line-height: 1.4;
   }
 }
 
