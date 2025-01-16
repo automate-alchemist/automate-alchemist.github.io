@@ -1,108 +1,123 @@
 /* Sidebar Container */
 .sidebar {
-  width: 220px; /* Width for better fit */
-  height: 100vh; /* Full viewport height */
-  padding: 1rem;
+  width: 220px;
+  min-height: 100vh;
+  padding: 2rem 1rem;  /* Increased top padding to prevent cropping */
   background-color: #ffffff;
-  margin-top: 0; /* Removed margin to avoid offset */
-  display: flex; /* Use flexbox for better alignment */
+  display: flex;
   flex-direction: column;
-  align-items: center; /* Center elements horizontally */
-  position: fixed; /* Fix the sidebar to the left */
-  top: 0; /* Position it at the top */
-  left: 0; /* Position it on the left */
+  align-items: center;
+  position: relative;  /* Changed to relative for better scroll behavior */
+  overflow-y: auto;  /* Allow scrolling if content is too tall */
 }
 
 /* Profile Section */
 .author__avatar {
   width: 150px;
-  height: auto; /* Allow height to adjust based on content */
-  margin-bottom: -20px; /* Shift image down slightly to avoid cropping */
+  height: 150px;  /* Fixed height to maintain aspect ratio */
+  margin: 0 auto 1rem;  /* Added bottom margin */
+  position: relative;  /* For better positioning control */
+  overflow: hidden;  /* Prevent image overflow */
+  border-radius: 50%;  /* Move border-radius to container */
 }
 
 .author__avatar img {
-  width: auto; /* Maintain aspect ratio without cropping */
-  max-height: 150px; /* Set a maximum height for the image */
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Maintain aspect ratio without cropping */
+  display: block;  /* Remove any extra space */
 }
 
-/* Author Name and Bio */
-.author__name,
-.author__bio {
+/* Author Name */
+.author__name {
+  width: 100%;
   text-align: center;
-  font-size: 0.9rem; /* Decreased font size for better fit */
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+/* Author Bio */
+.author__bio {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.4;
 }
 
 /* Location Box */
 .location {
+  width: calc(100% - 1rem);
   display: flex;
   align-items: center;
-  justify-content: center; /* Center text inside location box */
-  
   padding: 0.5rem;
-  
   background-color: #f8f9fa;
-  
   border: 1px solid #e9ecef;
-  
   border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
   
-  margin-bottom: 0.3rem; /* Space between location and other items */
+  i, svg {
+    margin-right: 0.5rem;
+  }
 }
 
 /* Navigation Links */
 .author__urls {
+  width: 100%;
   list-style: none;
   padding: 0;
+  margin: 0;
   
-   margin: auto; /* Center align the list */
-   
-   display: flex;
-   
-   flex-direction: column; /* Align links vertically */
+  li {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  
+  a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    color: #495057;
+    text-decoration: none;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+    
+    i, svg {
+      margin-right: 0.5rem;
+      width: 20px;
+      text-align: center;
+    }
+    
+    &:hover {
+      background-color: #e9ecef;
+    }
+  }
 }
 
-.author__urls li {
-   margin-bottom: 0.3rem; /* Decreased space between items */
-}
-
-.author__urls a {
-   display: flex; /* Use flexbox for centering text and icon */
-   
-   align-items: center; /* Center items vertically */
-
-   justify-content: center; /* Center items horizontally */
-
-   padding: 0.4rem;
-
-   color: #495057;
-
-   text-decoration: none;
-
-   border: 1px solid #e9ecef;
-
-   border-radius: 4px;
-
-   min-height: auto; /* Allow height to adjust based on content */
-
-   width: calc(100% - 10px); /* Set width to fill with some padding */
-
-   font-size: 0.85rem; /* Decrease font size for menu options */
-}
-
-.author__urls a:hover {
-    background-color: #e9ecef;
-}
-
-/* Follow Button Centering (if not hidden) */
+/* Hide Follow Button */
 button.follow,
 .follow {
-    display: block !important; /* Ensure it's displayed if needed */
-    margin-top: auto; /* Push it to the bottom of the sidebar */
-    align-self: center; /* Center the button horizontally */
+  display: none !important;
 }
 
-/* Social Icons */
-.social-links {
-    display: flex;
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    position: relative;
+    padding: 1rem;
+  }
+  
+  .author__avatar {
+    width: 120px;
+    height: 120px;
+  }
 }
