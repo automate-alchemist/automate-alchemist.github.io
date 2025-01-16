@@ -1,24 +1,24 @@
 /* Sidebar base styles */
 .sidebar {
   margin-bottom: 1em;
-  max-width: 250px; /* Reduced from 300px */
+  max-width: 250px;
+  padding: 0 15px; /* Added padding to center content */
   
   @include breakpoint($large) {
     float: left;
-    width: calc(#{$right-sidebar-width-narrow} - 3em); /* Reduced width */
+    width: calc(#{$right-sidebar-width-narrow} - 3em);
     position: fixed;
     top: 2em;
-    left: 1em; /* Add left margin */
+    left: 2em; /* Increased left margin to shift content right */
     
     &.sticky {
       overflow-y: auto;
-      /* Adjusted height calculation */
       max-height: calc(100vh - 5em);
     }
   }
 
   @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 4em); /* Further reduced for x-large screens */
+    width: calc(#{$right-sidebar-width} - 4em);
   }
 }
 
@@ -28,22 +28,27 @@
   vertical-align: top;
   width: 36px;
   height: 36px;
+  margin-top: 1em; /* Added top margin to prevent cropping */
 
   @include breakpoint($large) {
     display: block;
-    width: 120px; /* Reduced from 150px */
-    height: auto;
-    margin: 0 auto;
+    width: 150px; /* Increased for better proportion */
+    height: 150px; /* Added height to maintain circle shape */
+    margin: 1em auto 0; /* Added top margin and centered */
+    overflow: hidden; /* Ensure image stays within bounds */
+    border-radius: 50%; /* Make container circular */
   }
 
   img {
-    max-width: 120px; /* Reduced from 150px */
-    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image fills circle without distortion */
+    border-radius: 50%; /* Make image circular */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: all 0.2s ease;
 
     @include breakpoint($large) {
-      padding: 2px;
+      padding: 0; /* Removed padding to prevent circle distortion */
       
       &:hover {
         transform: translateY(-2px);
@@ -53,10 +58,10 @@
   }
 }
 
-/* Main content positioning */
+/* Rest of the styles remain the same */
 .main {
   margin-left: calc(#{$right-sidebar-width-narrow});
-  padding: 2em 1em 0 2em; /* Added horizontal padding */
+  padding: 2em 1em 0 2em;
   min-height: 100vh;
   
   @include breakpoint($x-large) {
@@ -64,12 +69,11 @@
   }
 }
 
-/* Navigation links wrapper */
 .author__urls-wrapper {
   position: relative;
   display: block;
   width: 100%;
-  font-size: 0.85em; /* Slightly reduced font size */
+  font-size: 0.85em;
   z-index: 10;
   
   @include breakpoint($large) {
@@ -77,7 +81,6 @@
   }
 }
 
-/* Navigation links container */
 .author__urls {
   width: 100%;
   margin: 8px 0;
@@ -86,7 +89,7 @@
   border-radius: $border-radius;
 
   li {
-    margin-bottom: 4px; /* Reduced from 5px */
+    margin-bottom: 4px;
     
     &:last-child {
       margin-bottom: 0;
@@ -96,7 +99,7 @@
   a {
     display: flex;
     align-items: center;
-    padding: 6px 10px; /* Reduced padding */
+    padding: 6px 10px;
     border-radius: 4px;
     background: $lighter-gray;
     transition: all 0.2s ease;
@@ -111,7 +114,7 @@
 
     i {
       margin-right: 6px;
-      width: 14px; /* Reduced icon width */
+      width: 14px;
       text-align: center;
     }
   }
