@@ -1,19 +1,21 @@
-/* Enhanced sidebar styling */
 .sidebar {
   @include clearfix();
   margin-bottom: 1em;
+  max-width: 300px; /* Limit maximum width */
   
   @include breakpoint($large) {
     float: left;
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
+    width: calc(#{$right-sidebar-width-narrow} - 2em);
+    position: fixed; /* Fix sidebar position */
+    top: 2em;
     &.sticky {
       overflow-y: auto;
-      height: calc(100vh - 2em);
+      max-height: calc(100vh - 4em);
     }
   }
 
   @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
+    width: calc(#{$right-sidebar-width} - 2em);
   }
 }
 
@@ -25,227 +27,92 @@
 
   @include breakpoint($large) {
     display: block;
-    width: auto;
+    width: 150px; /* Reduced from 180px */
     height: auto;
-    text-align: center;
+    margin: 0 auto;
   }
 
   img {
-    max-width: 180px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 150px; /* Reduced from 180px */
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
 
     @include breakpoint($large) {
-      padding: 5px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 3px;
       
       &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
       }
     }
   }
 }
 
-.author__content {
-  display: table-cell;
-  vertical-align: top;
-  padding-left: 15px;
-  padding-right: 25px;
-  line-height: 1;
-
-  @include breakpoint($large) {
-    display: block;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-  }
-}
-
-.author__name {
-  margin: 20px 0 10px;
-  font-size: 1.3em;
-  color: $primary-color;
-  font-weight: 600;
-
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-.author__bio {
-  margin: 0;
-  font-size: 0.9em;
-  font-style: italic;
-  line-height: 1.5;
+/* Main content adjustment */
+.main {
+  margin-left: calc(#{$right-sidebar-width-narrow} + 2em);
+  padding-top: 2em;
+  min-height: 100vh;
   
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
+  @include breakpoint($x-large) {
+    margin-left: calc(#{$right-sidebar-width} + 2em);
   }
 }
 
 .author__urls-wrapper {
   position: relative;
-  display: table-cell;
-  vertical-align: middle;
-  font-size: $type-size-5;
-  font-weight: normal;
+  display: block;
+  width: 100%;
+  font-size: 0.9em;
   z-index: 10;
-  position: relative;
-  cursor: pointer;
-
+  
   @include breakpoint($large) {
-    display: block;
-    padding-top: 20px;
-  }
-
-  button {
-    margin-bottom: 0;
-    padding: 0.5em 1em;
-    border: 0;
-    border-radius: $border-radius;
-    background-color: $lighter-gray;
-
-    @include breakpoint($large) {
-      display: none;
-    }
+    padding-top: 10px;
   }
 }
 
 .author__urls {
-  display: none;
-  position: absolute;
-  right: 0;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0;
   list-style-type: none;
-  border: 1px solid $border-color;
   border-radius: $border-radius;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  z-index: -1;
-
-  @include breakpoint($large) {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-
-  &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -11px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: $border-color transparent;
-    z-index: 0;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
-
-  &:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: #fff transparent;
-    z-index: 1;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
 
   li {
-    white-space: nowrap;
-    margin-bottom: 8px;
-    transition: transform 0.2s ease;
-
-    &:hover {
-      transform: translateX(5px);
+    margin-bottom: 5px;
+    
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
   a {
     display: flex;
     align-items: center;
-    padding: 8px 15px;
-    border-radius: 8px;
-    color: inherit;
-    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
     background: $lighter-gray;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    font-size: 0.9em;
 
     &:hover {
+      transform: translateX(3px);
       background: lighten($primary-color, 45%);
-      color: $primary-color;
-    }
-
-    /* Platform-specific hover states */
-    &[href*="github.com"]:hover {
-      background: #24292e;
-      color: white;
-    }
-
-    &[href*="linkedin.com"]:hover {
-      background: #0077B5;
-      color: white;
-    }
-
-    &[href*="medium.com"]:hover {
-      background: #00ab6c;
-      color: white;
-    }
-
-    &[href*="youtube.com"]:hover {
-      background: #ff0000;
-      color: white;
-    }
-
-    &[href*="t.me"]:hover {
-      background: #0088cc;
-      color: white;
     }
 
     i {
-      margin-right: 10px;
-      color: $primary-color;
-      font-size: 1.1em;
-      width: 20px;
-      text-align: center;
+      margin-right: 8px;
+      width: 16px;
     }
   }
 }
 
 /* Location badge styling */
 .author__urls .location {
-  background: lighten($primary-color, 45%);
-  border-radius: 20px;
-  padding: 5px 15px;
-  margin: 10px 0;
-  display: inline-flex;
-  align-items: center;
-  font-size: 0.9em;
-
-  i {
-    color: $primary-color;
-    margin-right: 5px;
-  }
+  background: lighten($primary-color, 48%);
+  border-radius: 15px;
+  padding: 4px 12px;
+  margin: 8px 0;
+  font-size: 0.85em;
 }
