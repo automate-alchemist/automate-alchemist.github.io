@@ -4,6 +4,9 @@
   padding: 1rem;
   background-color: #ffffff;
   margin-top: 1rem;
+  display: flex; /* Use flexbox for better alignment */
+  flex-direction: column;
+  align-items: center; /* Center elements horizontally */
 }
 
 /* Profile Section */
@@ -11,6 +14,7 @@
   width: 150px;
   height: 150px;
   margin: 0 auto;
+  margin-bottom: 1rem; /* Add some space below the image */
   position: relative;
 }
 
@@ -27,7 +31,7 @@
   text-align: center;
   font-size: 1.25rem;
   font-weight: 500;
-  margin: 1rem 0 0.5rem;
+  margin: 0.5rem 0; /* Adjust spacing */
   color: #333;
 }
 
@@ -36,7 +40,7 @@
   text-align: center;
   font-size: 0.9rem;
   color: #666;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem; /* Add more space below bio */
   line-height: 1.4;
 }
 
@@ -57,11 +61,14 @@
 .author__urls {
   list-style: none;
   padding: 0;
-  margin: 0.5rem 0;
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
 }
 
 .author__urls li {
-  margin: 0.25rem 0;
+  margin: 0.5rem; /* Add spacing between items */
 }
 
 .author__urls a {
@@ -74,6 +81,8 @@
   border-radius: 4px;
   background-color: #f8f9fa;
   transition: all 0.2s ease;
+  width: 100px; /* Set a fixed width for each link */
+  text-align: center; /* Center text within the link */
 }
 
 .author__urls a:hover {
@@ -87,7 +96,7 @@
   text-align: center;
 }
 
-/* Hide Follow Button - More Specific Selector */
+/* Hide Follow Button */
 button.follow,
 .follow {
   display: none !important;
