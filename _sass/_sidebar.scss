@@ -6,7 +6,7 @@ $sidebar-width: 240px;
   width: $sidebar-width;
   background-color: #fff;
   border-right: 1px solid #e9ecef;
-  
+
   @media (min-width: 1024px) {
     position: fixed;
     top: 0;
@@ -14,30 +14,29 @@ $sidebar-width: 240px;
     height: 100vh;
     overflow-y: auto;
   }
-  
+
   &__inner {
     padding-top: $nav-height;
   }
 }
 
 .author {
-  &__avatar {  // Fixed: Added __avatar class
-     &__avatar {
+  &__avatar {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid #e9ecef;
     margin: 0 auto 0.75rem;
-    
+
     img {
       width: 100%;
       height: auto; // Maintain aspect ratio
       object-fit: cover; // Ensure proper scaling within the circle
-      object-position: center 15%; 
+      object-position: center 15%; // Adjust the position of the face
     }
   }
-  
+
   &__name {
     font-size: 1rem;
     font-weight: 500;
@@ -45,7 +44,7 @@ $sidebar-width: 240px;
     color: #212529;
     text-align: center;
   }
-  
+
   &__bio {
     font-size: 0.85rem;
     color: #6c757d;
@@ -67,7 +66,7 @@ $sidebar-width: 240px;
   font-size: 0.85rem;
   text-decoration: none;
   text-align: center;
-  
+
   &:hover {
     background-color: #e9ecef;
     text-decoration: none;
@@ -79,15 +78,15 @@ $sidebar-width: 240px;
   margin: 0.75rem 0 0;
   padding: 0;
   list-style: none;
-  
+
   li {
     margin-bottom: 0.35rem;
-    
+
     &:last-child {
       margin-bottom: 0;
     }
   }
-  
+
   a {
     display: flex;
     align-items: center;
@@ -99,13 +98,14 @@ $sidebar-width: 240px;
     text-decoration: none;
     font-size: 0.85rem;
     transition: background-color 0.2s;
-    
-    i, svg {
+
+    i,
+    svg {
       margin-right: 0.4rem;
       width: 14px;
       height: 14px;
     }
-    
+
     &:hover {
       background-color: #e9ecef;
     }
