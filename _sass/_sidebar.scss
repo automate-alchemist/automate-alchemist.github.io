@@ -1,19 +1,23 @@
 /* Sidebar Container */
 .sidebar {
-  width: 250px;
+  width: 300px; /* Increased width */
+  height: 60vh; /* Decreased height */
   padding: 1rem;
   background-color: #ffffff;
   margin-top: 1rem;
   display: flex; /* Use flexbox for better alignment */
   flex-direction: column;
   align-items: center; /* Center elements horizontally */
+  position: fixed; /* Fix the sidebar to the left */
+  top: 0; /* Position it at the top */
+  left: 0; /* Position it on the left */
+  overflow-y: auto; /* Add scrollbar to the sidebar itself */
 }
 
 /* Profile Section */
 .author__avatar {
   width: 150px;
   height: 150px;
-  margin: 0 auto;
   margin-bottom: 1rem; /* Add some space below the image */
   position: relative;
 }
