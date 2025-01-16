@@ -1,5 +1,9 @@
+// Variables
+$nav-height: 70px; // Adjust this to match your navigation height
+$sidebar-width: 240px;
+
 .sidebar {
-  width: 240px;
+  width: $sidebar-width;
   background-color: #fff;
   border-right: 1px solid #e9ecef;
   
@@ -11,13 +15,32 @@
     overflow-y: auto;
   }
   
-  // Container for profile section
+  // Sidebar content wrapper
+  &__inner {
+    padding-top: $nav-height; // This ensures content starts below navigation
+  }
+  
+  // Author section
   .author {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem; // Space for navigation above
     padding: 0 0.75rem;
+    
+    &__avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #e9ecef;
+      margin-bottom: 0.75rem;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
     
     &__name {
       font-size: 1rem;
@@ -25,20 +48,6 @@
       margin: 0.5rem 0;
       color: #212529;
       text-align: center;
-    }
-    
-    &__avatar {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 0.5rem auto;
-      
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
     }
     
     &__bio {
@@ -49,99 +58,81 @@
       line-height: 1.4;
     }
   }
+}
+
+// Follow button - centered positioning
+.follow {
+  display: block;
+  width: max-content;
+  margin: 0.75rem auto;
+  padding: 0.4rem 1.2rem;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  color: #495057;
+  font-size: 0.85rem;
+  text-decoration: none;
+  text-align: center;
   
-  .follow {
-    display: block;
-    width: fit-content;
-    margin: 0.5rem auto;
-    padding: 0.3rem 1rem;
+  &:hover {
+    background-color: #e9ecef;
+    text-decoration: none;
+  }
+}
+
+// Social links
+.author__urls {
+  width: 100%;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  
+  li {
+    margin-bottom: 0.35rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  a {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
     background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
+    border: 1px solid #e9ecef;
     border-radius: 4px;
     color: #495057;
-    font-size: 0.85rem;
     text-decoration: none;
-    text-align: center;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+    
+    i, svg {
+      margin-right: 0.4rem;
+      width: 14px;
+      height: 14px;
+    }
     
     &:hover {
       background-color: #e9ecef;
-      text-decoration: none;
-    }
-  }
-  
-  .author__urls {
-    width: 100%;
-    margin: 0.5rem 0 0;
-    padding: 0;
-    list-style: none;
-    
-    li {
-      margin-bottom: 0.35rem;
-    }
-    
-    a {
-      display: flex;
-      align-items: center;
-      padding: 0.4rem 0.6rem;
-      background-color: #f8f9fa;
-      border: 1px solid #e9ecef;
-      border-radius: 4px;
-      color: #495057;
-      text-decoration: none;
-      font-size: 0.85rem;
-      
-      i, svg {
-        margin-right: 0.4rem;
-        width: 14px;
-        height: 14px;
-      }
-      
-      &:hover {
-        background-color: #e9ecef;
-        text-decoration: none;
-      }
     }
   }
 }
 
-// This ensures the navigation stays at the top
+// Masthead navigation adjustment
 .masthead {
   position: fixed;
   top: 0;
-  left: 240px; // Same as sidebar width
+  left: $sidebar-width;
   right: 0;
+  height: $nav-height;
   z-index: 10;
   background-color: #fff;
   border-bottom: 1px solid #e9ecef;
-  padding: 1rem;
-  
-  .greedy-nav {
-    display: flex;
-    align-items: center;
-    
-    .visible-links {
-      display: flex;
-      gap: 1rem;
-      
-      li {
-        list-style: none;
-      }
-      
-      a {
-        color: #495057;
-        text-decoration: none;
-        font-size: 0.9rem;
-        
-        &:hover {
-          color: #212529;
-        }
-      }
-    }
-  }
 }
 
-// Adjust main content area
+// Main content adjustment
 .initial-content {
-  margin-left: 240px; // Same as sidebar width
-  padding-top: 4rem; // Space for fixed navigation
+  margin-left: $sidebar-width;
+  padding-top: $nav-height;
 }
