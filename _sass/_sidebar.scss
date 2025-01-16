@@ -2,14 +2,15 @@
 .sidebar {
   margin-bottom: 1em;
   max-width: 250px;
-  padding: 0 15px; /* Added padding to center content */
+  padding: 0 15px;
+  margin-top: 3em; /* Added top margin for better vertical centering */
   
   @include breakpoint($large) {
     float: left;
     width: calc(#{$right-sidebar-width-narrow} - 3em);
     position: fixed;
     top: 2em;
-    left: 2em; /* Increased left margin to shift content right */
+    left: 2em;
     
     &.sticky {
       overflow-y: auto;
@@ -22,33 +23,38 @@
   }
 }
 
+/* Hide follow button */
+.follow {
+  display: none;
+}
+
 /* Profile avatar styles */
 .author__avatar {
   display: table-cell;
   vertical-align: top;
   width: 36px;
   height: 36px;
-  margin-top: 1em; /* Added top margin to prevent cropping */
+  margin-top: 2em; /* Increased top margin */
 
   @include breakpoint($large) {
     display: block;
-    width: 150px; /* Increased for better proportion */
-    height: 150px; /* Added height to maintain circle shape */
-    margin: 1em auto 0; /* Added top margin and centered */
-    overflow: hidden; /* Ensure image stays within bounds */
-    border-radius: 50%; /* Make container circular */
+    width: 150px;
+    height: 150px;
+    margin: 2em auto 1.5em; /* Adjusted margins for better spacing */
+    overflow: hidden;
+    border-radius: 50%;
   }
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure image fills circle without distortion */
-    border-radius: 50%; /* Make image circular */
+    object-fit: cover;
+    border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: all 0.2s ease;
 
     @include breakpoint($large) {
-      padding: 0; /* Removed padding to prevent circle distortion */
+      padding: 0;
       
       &:hover {
         transform: translateY(-2px);
@@ -58,29 +64,17 @@
   }
 }
 
-/* Rest of the styles remain the same */
-.main {
-  margin-left: calc(#{$right-sidebar-width-narrow});
-  padding: 2em 1em 0 2em;
-  min-height: 100vh;
-  
-  @include breakpoint($x-large) {
-    margin-left: calc(#{$right-sidebar-width} - 2em);
-  }
-}
-
+/* Navigation links wrapper */
 .author__urls-wrapper {
   position: relative;
   display: block;
   width: 100%;
   font-size: 0.85em;
   z-index: 10;
-  
-  @include breakpoint($large) {
-    padding-top: 8px;
-  }
+  margin-top: 1em; /* Added margin for better spacing */
 }
 
+/* Navigation links and location */
 .author__urls {
   width: 100%;
   margin: 8px 0;
@@ -96,7 +90,8 @@
     }
   }
 
-  a {
+  /* Style for all links including location */
+  a, .location {
     display: flex;
     align-items: center;
     padding: 6px 10px;
@@ -106,6 +101,7 @@
     font-size: 0.9em;
     color: $text-color;
     text-decoration: none;
+    margin: 4px 0;
 
     &:hover {
       transform: translateX(2px);
@@ -120,14 +116,9 @@
   }
 }
 
-/* Location badge */
+/* Remove special location styling since it's now like other links */
 .author__urls .location {
-  background: lighten($primary-color, 52%);
-  border-radius: 12px;
-  padding: 3px 10px;
-  margin: 6px 0;
-  font-size: 0.8em;
-  color: darken($primary-color, 15%);
+  background: $lighter-gray; /* Same as other links */
 }
 
 /* Responsive adjustments */
