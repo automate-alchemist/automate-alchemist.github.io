@@ -15,12 +15,10 @@ $sidebar-width: 240px;
     overflow-y: auto;
   }
   
-  // Sidebar content wrapper
   &__inner {
     padding-top: $nav-height;
   }
   
-  // Author section
   .author {
     display: flex;
     flex-direction: column;
@@ -63,7 +61,6 @@ $sidebar-width: 240px;
   }
 }
 
-// Follow button
 .follow {
   display: block;
   width: max-content;
@@ -83,5 +80,56 @@ $sidebar-width: 240px;
   }
 }
 
-// Social links
-.a
+.author__urls {
+  width: 100%;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  
+  li {
+    margin-bottom: 0.35rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  a {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    color: #495057;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+    
+    i, svg {
+      margin-right: 0.4rem;
+      width: 14px;
+      height: 14px;
+    }
+    
+    &:hover {
+      background-color: #e9ecef;
+    }
+  }
+}
+
+.masthead {
+  position: fixed;
+  top: 0;
+  left: $sidebar-width;
+  right: 0;
+  height: $nav-height;
+  z-index: 10;
+  background-color: #fff;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.initial-content {
+  margin-left: $sidebar-width;
+  padding-top: $nav-height;
+}
