@@ -1,6 +1,6 @@
 /* Sidebar Container */
 .sidebar {
-  width: 250px; /* Decreased width for better fit */
+  width: 220px; /* Further decreased width for better fit */
   height: 100vh; /* Full viewport height */
   padding: 1rem;
   background-color: #ffffff;
@@ -21,8 +21,9 @@
 }
 
 .author__avatar img {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Allow width to adjust based on height */
+  height: auto; /* Maintain aspect ratio without cropping */
+  max-height: 150px; /* Set a maximum height for the image */
   border-radius: 50%;
 }
 
@@ -30,6 +31,7 @@
 .author__name,
 .author__bio {
   text-align: center;
+  font-size: 0.9rem; /* Decreased font size for better fit */
 }
 
 /* Location Box */
@@ -59,21 +61,24 @@
 .author__urls a {
   display: flex; /* Use flexbox for centering text and icon */
   align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
   
-  padding: 0.4rem;
-  
-  color: #495057;
-  
-  text-decoration: none;
-  
-  border: 1px solid #e9ecef;
-  
-  border-radius: 4px;
+   justify-content: center; /* Center items horizontally */
+
+   padding: 0.4rem;
+
+   color: #495057;
+
+   text-decoration: none;
+
+   border: 1px solid #e9ecef;
+
+   border-radius: 4px;
 
    min-height: auto; /* Allow height to adjust based on content */
 
    width: calc(100% - 10px); /* Set width to fill with some padding */
+
+   font-size: 0.85rem; /* Decrease font size for menu options */
 }
 
 .author__urls a:hover {
