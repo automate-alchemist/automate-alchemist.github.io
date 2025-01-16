@@ -1,6 +1,6 @@
 /* Sidebar Container */
 .sidebar {
-  width: 220px; /* Further decreased width for better fit */
+  width: 220px; /* Width for better fit */
   height: 100vh; /* Full viewport height */
   padding: 1rem;
   background-color: #ffffff;
@@ -16,13 +16,12 @@
 /* Profile Section */
 .author__avatar {
   width: 150px;
-  height: 150px;
-  margin-bottom: 1rem; /* Space below the image */
+  height: auto; /* Allow height to adjust based on content */
+  margin-bottom: -20px; /* Shift image down slightly to avoid cropping */
 }
 
 .author__avatar img {
-  width: auto; /* Allow width to adjust based on height */
-  height: auto; /* Maintain aspect ratio without cropping */
+  width: auto; /* Maintain aspect ratio without cropping */
   max-height: 150px; /* Set a maximum height for the image */
   border-radius: 50%;
 }
@@ -38,30 +37,40 @@
 .location {
   display: flex;
   align-items: center;
+  justify-content: center; /* Center text inside location box */
+  
   padding: 0.5rem;
+  
   background-color: #f8f9fa;
+  
   border: 1px solid #e9ecef;
+  
   border-radius: 4px;
-  margin-bottom: 0.5rem; /* Space between location and other items */
+  
+  margin-bottom: 0.3rem; /* Space between location and other items */
 }
 
 /* Navigation Links */
 .author__urls {
   list-style: none;
   padding: 0;
-  margin: auto; /* Center align the list */
-  display: flex;
-  flex-direction: column; /* Align links vertically */
+  
+   margin: auto; /* Center align the list */
+   
+   display: flex;
+   
+   flex-direction: column; /* Align links vertically */
 }
 
 .author__urls li {
-  margin-bottom: 0.3rem; /* Decreased space between items */
+   margin-bottom: 0.3rem; /* Decreased space between items */
 }
 
 .author__urls a {
-  display: flex; /* Use flexbox for centering text and icon */
-  align-items: center; /* Center items vertically */
-  
+   display: flex; /* Use flexbox for centering text and icon */
+   
+   align-items: center; /* Center items vertically */
+
    justify-content: center; /* Center items horizontally */
 
    padding: 0.4rem;
@@ -85,10 +94,12 @@
     background-color: #e9ecef;
 }
 
-/* Hide Follow Button */
+/* Follow Button Centering (if not hidden) */
 button.follow,
 .follow {
-    display: none !important;
+    display: block !important; /* Ensure it's displayed if needed */
+    margin-top: auto; /* Push it to the bottom of the sidebar */
+    align-self: center; /* Center the button horizontally */
 }
 
 /* Social Icons */
