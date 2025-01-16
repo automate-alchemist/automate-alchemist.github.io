@@ -1,7 +1,7 @@
 /* Sidebar Container */
 .sidebar {
   width: 300px; /* Width remains the same */
-  height: 100vh; /* Set height to full viewport height */
+  height: 100vh; /* Full viewport height */
   padding: 1rem;
   background-color: #ffffff;
   margin-top: 0; /* Removed margin to avoid offset */
@@ -46,26 +46,29 @@
 }
 
 .author__urls a {
-  display: block; /* Make links block elements for full width */
+  display: flex; /* Use flexbox for centering text and icon */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
   padding: 0.4rem;
   color: #495057;
   text-decoration: none;
   border: 1px solid #e9ecef;
   border-radius: 4px;
-  background-color: #f8f9fa;
+  
+  min-height: 40px; /* Set a minimum height for each box to ensure visibility of text and icon */
 }
 
 .author__urls a:hover {
-  background-color: #e9ecef;
+    background-color: #e9ecef;
 }
 
 /* Hide Follow Button */
 button.follow,
 .follow {
-  display: none !important;
+    display: none !important;
 }
 
 /* Social Icons */
 .social-links {
-  display: flex;
+    display: flex;
 }
