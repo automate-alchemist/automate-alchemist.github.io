@@ -89,9 +89,10 @@ $sidebar-width: 240px;
   }
 
   a {
-    display: flex;
-    align-items: center;
-    padding: 0.4rem 0.6rem;
+    display: flex; /* Enables flexbox for alignment */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    padding: 0.6rem; /* Adjust spacing around the text and icon */
     background-color: #f8f9fa;
     border: 1px solid #e9ecef;
     border-radius: 4px;
@@ -100,11 +101,10 @@ $sidebar-width: 240px;
     font-size: 0.85rem;
     transition: background-color 0.2s;
 
-    i,
-    svg {
-      margin-right: 0.4rem;
-      width: 14px;
-      height: 14px;
+    i, svg {
+      margin-right: 0.5rem; /* Adds space between the icon and text */
+      width: 16px; /* Adjust icon size */
+      height: 16px; /* Adjust icon size */
     }
 
     &:hover {
@@ -112,6 +112,7 @@ $sidebar-width: 240px;
     }
   }
 }
+
 
 .masthead {
   position: fixed;
