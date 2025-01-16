@@ -1,98 +1,93 @@
-/* Sidebar Container */
+/* Sidebar base styles */
 .sidebar {
+  margin: 0;
+  padding: 1rem;
   width: 220px;
-  min-height: 100vh;
-  padding: 2rem 1rem;  /* Increased top padding to prevent cropping */
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;  /* Changed to relative for better scroll behavior */
-  overflow-y: auto;  /* Allow scrolling if content is too tall */
-}
-
-/* Profile Section */
-.author__avatar {
-  width: 150px;
-  height: 150px;  /* Fixed height to maintain aspect ratio */
-  margin: 0 auto 1rem;  /* Added bottom margin */
-  position: relative;  /* For better positioning control */
-  overflow: hidden;  /* Prevent image overflow */
-  border-radius: 50%;  /* Move border-radius to container */
-}
-
-.author__avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* Maintain aspect ratio without cropping */
-  display: block;  /* Remove any extra space */
-}
-
-/* Author Name */
-.author__name {
-  width: 100%;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin: 0.5rem 0;
-  color: #333;
-}
-
-/* Author Bio */
-.author__bio {
-  width: 100%;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-
-/* Location Box */
-.location {
-  width: calc(100% - 1rem);
-  display: flex;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
+  z-index: 10;
+  background-color: #fff;
   
-  i, svg {
-    margin-right: 0.5rem;
+  @media (min-width: 1024px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid #e9ecef;
   }
 }
 
-/* Navigation Links */
-.author__urls {
+/* Profile image and container */
+.author__avatar {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 1rem auto;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* Author name and bio */
+.author__name {
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.author__bio {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Location styling */
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Navigation menu */
+.author__urls-wrapper {
   width: 100%;
-  list-style: none;
-  padding: 0;
+  position: relative;
+}
+
+.author__urls {
   margin: 0;
+  padding: 0;
+  list-style: none;
   
   li {
     margin-bottom: 0.5rem;
-    width: 100%;
   }
   
   a {
     display: flex;
     align-items: center;
-    padding: 0.5rem;
-    color: #495057;
-    text-decoration: none;
+    padding: 0.75rem;
+    background-color: #f8f9fa;
     border: 1px solid #e9ecef;
     border-radius: 4px;
-    width: 100%;
+    color: #495057;
+    text-decoration: none;
     font-size: 0.9rem;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s;
     
     i, svg {
-      margin-right: 0.5rem;
-      width: 20px;
-      text-align: center;
+      margin-right: 0.75rem;
+      min-width: 20px;
     }
     
     &:hover {
@@ -101,23 +96,15 @@
   }
 }
 
-/* Hide Follow Button */
-button.follow,
+/* Hide follow button */
 .follow {
   display: none !important;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  .sidebar {
-    width: 100%;
-    min-height: auto;
-    position: relative;
-    padding: 1rem;
-  }
-  
-  .author__avatar {
-    width: 120px;
-    height: 120px;
+/* Content positioning for Jekyll layout */
+.initial-content,
+.archive {
+  @media (min-width: 1024px) {
+    margin-left: 220px;
   }
 }
