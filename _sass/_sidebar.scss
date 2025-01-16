@@ -1,6 +1,6 @@
 /* Sidebar Container */
 .sidebar {
-  width: 300px; /* Width remains the same */
+  width: 250px; /* Decreased width for better fit */
   height: 100vh; /* Full viewport height */
   padding: 1rem;
   background-color: #ffffff;
@@ -32,6 +32,17 @@
   text-align: center;
 }
 
+/* Location Box */
+.location {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  margin-bottom: 0.5rem; /* Space between location and other items */
+}
+
 /* Navigation Links */
 .author__urls {
   list-style: none;
@@ -42,20 +53,27 @@
 }
 
 .author__urls li {
-  margin-bottom: 0.5rem; /* Space between items */
+  margin-bottom: 0.3rem; /* Decreased space between items */
 }
 
 .author__urls a {
   display: flex; /* Use flexbox for centering text and icon */
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
-  padding: 0.4rem;
-  color: #495057;
-  text-decoration: none;
-  border: 1px solid #e9ecef;
-  border-radius: 4px;
   
-  min-height: 40px; /* Set a minimum height for each box to ensure visibility of text and icon */
+  padding: 0.4rem;
+  
+  color: #495057;
+  
+  text-decoration: none;
+  
+  border: 1px solid #e9ecef;
+  
+  border-radius: 4px;
+
+   min-height: auto; /* Allow height to adjust based on content */
+
+   width: calc(100% - 10px); /* Set width to fill with some padding */
 }
 
 .author__urls a:hover {
