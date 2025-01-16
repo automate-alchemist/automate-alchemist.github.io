@@ -1,8 +1,16 @@
-.project-grid {
+.archive__subtitle {
+    margin-top: 2em;
+    padding-bottom: 0.5em;
+    border-bottom: solid 1px #bbb;
+    color: #333;
+  }
+
+  .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 2.5rem;
     margin-top: 2rem;
+    margin-bottom: 3rem;
   }
   
   .project-card {
@@ -11,6 +19,8 @@
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem;
+
     
     &:hover {
       transform: translateY(-5px);
