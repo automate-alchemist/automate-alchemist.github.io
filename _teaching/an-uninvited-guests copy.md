@@ -10,11 +10,11 @@ location: "City"
 
 <style>
 :root {
-    --primary: #FF4B2B;
-    --secondary: #FF416C;
-    --text: #2D3436;
-    --bg: #FAFBFC;
-    --accent: #FED7D7;
+    --primary: #FF6F61; /* Bright coral */
+    --secondary: #FF9A85; /* Soft peach */
+    --text: #2D3436; /* Dark gray */
+    --bg: #FAFBFC; /* Light background */
+    --accent: #FFD700; /* Gold */
 }
 
 .story-container {
@@ -30,65 +30,38 @@ location: "City"
     position: relative;
     padding: 4rem 2rem;
     margin: -2rem -2rem 3rem;
-    background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: white;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
-.hero-meta {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    opacity: 0.9;
-    margin-bottom: 1rem;
-}
-
 .hero-title {
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 2rem;
-    max-width: 800px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-meta {
+    font-size: 1rem;
 }
 
 /* Content Sections */
 .story-section {
-    position: relative;
     background: white;
     padding: 2.5rem;
     margin-bottom: 2rem;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.section-number {
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
-    font-size: 1.8rem;
-    color: var(--text);
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    border-left: 4px solid var(--primary);
+    font-size: 2rem;
+    color: var(--primary);
 }
 
 .section-content {
     color: var(--text);
-    line-height: 1.8;
-    font-size: 1.1rem;
 }
 
 /* Lessons Section */
@@ -96,80 +69,42 @@ location: "City"
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
-    margin-top: 4rem;
 }
 
 .lesson-card {
-    position: relative;
     background: white;
     padding: 2rem;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .lesson-card:hover {
     transform: translateY(-5px);
-}
-
-.lesson-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(to right, var(--primary), var(--secondary));
-    border-radius: 16px 16px 0 0;
-}
-
-.lesson-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-.lesson-content {
-    color: var(--text);
-    line-height: 1.6;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* Decorative Elements */
 .deco-circle {
     position: absolute;
-    border-radius: 50%;
-    background: linear-gradient(45deg, var(--primary), var(--secondary));
-    opacity: 0.1;
+    border-radius:50%;
 }
 
 .deco-1 {
-    width: 100px;
-    height: 100px;
-    top: -20px;
-    right: -20px;
+    width:100px; 
 }
 
 .deco-2 {
-    width: 150px;
-    height: 150px;
-    bottom: -40px;
-    left: -40px;
+     width:150px; 
 }
 
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-    
-    .story-section {
-        padding: 1.5rem;
-    }
-    
-    .lessons-container {
-        grid-template-columns: 1fr;
-    }
+/* Media Queries */
+@media (max-width:768px) {
+     .hero-title { 
+         font-size:2.5rem; 
+     }
 }
+
 </style>
 
 <article class="story-container">
