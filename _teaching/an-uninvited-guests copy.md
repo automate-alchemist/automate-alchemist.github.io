@@ -21,7 +21,6 @@ location: "City"
   h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    text-align: center;
     margin-bottom: 1.5rem;
     color: #0073e6; /* Accent color */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -42,10 +41,7 @@ location: "City"
 
   /* Section styles */
   .section {
-    background-color: #f9f9f9;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
   }
 
@@ -82,7 +78,10 @@ location: "City"
   }
 </style>
 
-<h1>An Unexpected Bug Attended Diwali Party</h1>
+<h1>An Uninvited Guest in the Diwali Party</h1>
+<p class="subheading">Pairwise Testing | Bug | 2024</p> 
+
+<h2>An Unexpected Bug Attended Diwali Party</h2>
 
 <p>
   It was a usual evening, and in just a couple of hours, the Diwali party was about to begin. Excitement was in the air, and everyone was looking forward to creating some memorable moments. Some people were dressed in ethnic wear, while others were in casual clothes, but the shared excitement and team spirit were clear. Before the party, everyone was trying to wrap up their work to enjoy the evening stress-free. But, as we all know, no software is perfect—sometimes, it’s all about the timing when a bug shows up.
