@@ -247,45 +247,74 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="wilt-container">
   <header class="wilt-header">
-    <h1>What I Learned Today</h1>
     <p>Documenting daily discoveries and insights in technology and personal growth</p>
   </header>
 
-  <div class="timeline">
-    {% for entry in site.posts %}
-      {% if entry.categories contains 'wilt' %}
-      <article class="timeline-entry">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="entry-date">{{ entry.date | date: "%d %B" }}</div>
-          <h2 class="entry-title">{{ entry.title }}</h2>
-          
-          <div class="entry-section">
-            <div class="section-title">Learning</div>
-            <div class="section-content">{{ entry.learning }}</div>
-          </div>
-
-          <div class="entry-section">
-            <div class="section-title">Description</div>
-            <div class="section-content">{{ entry.description }}</div>
-          </div>
-
-          <div class="entry-section">
-            <div class="section-title">Key Takeaway</div>
-            <div class="section-content">{{ entry.takeaway }}</div>
-          </div>
-
-          <div class="entry-section">
-            <div class="section-title">Personal Reflection</div>
-            <div class="section-content">{{ entry.reflection }}</div>
-          </div>
+   <div class="timeline">
+    <!-- January 12 -->
+    <article class="timeline-entry">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="entry-date">12th January</div>
+        <h2 class="entry-title">AI Articles: Applications in Testing</h2>
+        
+        <div class="entry-section">
+          <div class="section-title">Learning</div>
+          <div class="section-content">Explored AI applications in software testing.</div>
         </div>
-      </article>
-      {% endif %}
-    {% endfor %}
-  </div>
 
-  <div class="archives-link">
-    <a href="/november-wilt">Explore Previous Entries</a>
+        <div class="entry-section">
+          <div class="section-title">Description</div>
+          <div class="section-content">I read several online articles about the emerging role of AI in software testing, particularly how it can help in automating test case generation, bug detection, and even predicting potential issues based on historical data.</div>
+        </div>
+
+        <div class="entry-section">
+          <div class="section-title">Key Takeaway</div>
+          <div class="section-content">AI can revolutionize the testing process by reducing manual efforts and improving test coverage. Its ability to predict defects and automate repetitive tasks offers a significant efficiency boost.</div>
+        </div>
+
+        <div class="entry-section">
+          <div class="section-title">Personal Reflection</div>
+          <div class="section-content">I'm excited about the possibilities of AI in testing. It could drastically improve how we approach quality assurance in the future, and I'm eager to explore this further.</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- January 11 -->
+    <article class="timeline-entry">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="entry-date">11th January</div>
+        <h2 class="entry-title">Ikigai: Understanding Purpose</h2>
+        
+        <div class="entry-section">
+          <div class="section-title">Learning</div>
+          <div class="section-content">Read and reflected on the concept of Ikigai.</div>
+        </div>
+
+        <div class="entry-section">
+          <div class="section-title">Description</div>
+          <div class="section-content">I continued reading Ikigai and explored how it promotes finding balance in life by focusing on four pillars: what you love, what you're good at, what the world needs, and what you can be paid for.</div>
+        </div>
+
+        <div class="entry-section">
+          <div class="section-title">Key Takeaway</div>
+          <div class="section-content">Ikigai offers a holistic approach to achieving happiness and fulfillment by aligning your passions, talents, societal needs, and financial success.</div>
+        </div>
+
+        <div class="entry-section">
+          <div class="section-title">Personal Reflection</div>
+          <div class="section-content">This book has made me think about how I can better align my work and personal life with my values and purpose. It's a powerful perspective for overall well-being.</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- [Continue with similar article blocks for January 10 through January 1] -->
+    <!-- Example structure repeats for each day -->
+
+    <!-- Archive Link -->
+    <div class="archives-link">
+      <a href="/november-wilt">View Previous Entries</a>
+    </div>
   </div>
 </div>
