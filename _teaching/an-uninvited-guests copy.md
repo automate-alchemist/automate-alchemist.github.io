@@ -11,56 +11,56 @@ location: "City"
 <style>
   /* Base styles */
   body {
-    font-family: sans-serif;
-    margin: 2rem;
+    font-family: 'Lora', serif; /* Or a similar serif font */
+    margin: 2rem auto;
+    max-width: 800px;
     line-height: 1.6;
     color: #333;
-  }
-
-  h1,
-  h2,
-  h3 {
-    margin: 1rem 0;
   }
 
   h1 {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 1.5rem;
+    color: #0073e6; /* Accent color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   }
 
   h2 {
     font-size: 1.8rem;
     font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #555;
   }
 
   p {
     font-size: 1rem;
-  }
-
-  /* Animation */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    text-indent: 20px; 
   }
 
   /* Section styles */
   .section {
     background-color: #f9f9f9;
-    padding: 20px;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
-  .incident,
+  /* Lessons section */
   .lessons {
-    animation: fadeIn 1s ease-in-out;
+    background-color: #e8f0fe; /* Light blue for a subtle accent */
+  }
+
+  .lessons ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .lessons li {
+    margin-bottom: 1rem;
   }
 
   /* Code block styling */
@@ -68,6 +68,7 @@ location: "City"
     background-color: #eee;
     padding: 1rem;
     border-radius: 5px;
+    overflow-x: auto; 
   }
 
   /* Custom Link Styling (optional) */
@@ -81,15 +82,13 @@ location: "City"
   }
 </style>
 
-<div class="section incident">
-  <h1>An Unexpected Bug Attended Diwali Party</h1>
-</div>
+<h1>An Unexpected Bug Attended Diwali Party</h1>
 
 <p>
   It was a usual evening, and in just a couple of hours, the Diwali party was about to begin. Excitement was in the air, and everyone was looking forward to creating some memorable moments. Some people were dressed in ethnic wear, while others were in casual clothes, but the shared excitement and team spirit were clear. Before the party, everyone was trying to wrap up their work to enjoy the evening stress-free. But, as we all know, no software is perfect—sometimes, it’s all about the timing when a bug shows up.
 </p>
 
-<div class="section incident">
+<div class="section">
   <h2>Incident Reported</h2>
 
   <p>
@@ -97,7 +96,7 @@ location: "City"
   </p>
 </div>
 
-<div class="section incident">
+<div class="section">
   <h2>Debugging Begins</h2>
 
   <p>
@@ -105,7 +104,7 @@ location: "City"
   </p>
 </div>
 
-<div class="section deployment">
+<div class="section">
   <h2>Deployment Process</h2>
 
   <p>
