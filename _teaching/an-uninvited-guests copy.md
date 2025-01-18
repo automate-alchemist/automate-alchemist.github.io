@@ -1,5 +1,5 @@
 ---
-title: "When Production Met Puja: A Diwali Debug Story"
+title: "An Uninvited Guest in the Diwali Party"
 collection: testing-musings
 type: "Pairwise Testing"
 permalink: /testing-musings/an-unexpected-bug
@@ -8,177 +8,46 @@ date: 2024-10-10
 location: "City"
 ---
 
+<div style="max-width: 800px; margin: auto; background-color: #ffffff; padding: 30px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+  <h1 style="color: #2c3e50; text-align: center; font-family: 'Merriweather', serif; font-size: 2.5em; animation: fadeIn 1s ease-in-out;">An Unexpected Bug Attended Diwali Party</h1>
+</div>
+
+<div style="max-width: 800px; margin: auto; font-family: 'Open Sans', sans-serif; line-height: 1.6;">
+  
+<p style="text-align: justify; font-size: 1.1em; color: #34495e;">
+It was a usual evening, and in just a couple of hours, the Diwali party was about to begin. Excitement was in the air, and everyone was looking forward to creating some memorable moments. Some people were dressed in ethnic wear, while others were in casual clothes, but the shared excitement and team spirit were clear. Before the party, everyone was trying to wrap up their work to enjoy the evening stress-free. But, as we all know, no software is perfect—sometimes, it’s all about the timing when a bug shows up.
+</p>
+
+<h2 style="color: #2980b9; margin-top: 40px; font-weight: bold;">Incident Reported</h2>
+<p style="text-align: justify; font-size: 1.1em; color: #34495e;">
+Just half an hour before finishing up, we got word of a bug in the production environment. Initially, it seemed like a simple issue that could be fixed quickly with a hotfix. But since it was already time for the Diwali party, some people started heading there, while my team gathered in the boardroom, hoping to solve the issue fast. Within 10 minutes, everyone was there—front-end, back-end, QA, and PM.
+</p>
+
+<h2 style="color: #2980b9; margin-top: 40px; font-weight: bold;">Debugging Begins</h2>
+<p style="text-align: justify; font-size: 1.1em; color: #34495e;">
+With everyone in the room, we started digging into the problem. As time passed, we realized the debugging was getting more complicated. But finding the root cause was the priority before fixing it. The team began pairwise testing, trying out different combinations. After nearly an hour, we finally found the root cause: a small error in variable name declaration. Even though it seemed like a minor issue, every production bug is critical, so fixing it was our top priority.
+</p>
+
+<h2 style="color: #2980b9; margin-top: 40px; font-weight: bold;">Deployment Process</h2>
+<p style="text-align: justify; font-size: 1.1em; color: #34495e;">
+Once we fixed the issue, it was time to test. Testing is crucial when deploying to production, so we tested on the test environment first, then moved it to staging. After a quick sanity check on staging, we got the sign-off for production. This whole process took around 5 hours, and by the time we deployed the hotfix on production, it was already 10:15 p.m., making us late to the party.
+</p>
+
+<div style="background-color: #ecf0f1; padding: 30px; border-radius: 15px; margin-top: 40px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+<h2 style="color: #2c3e50; font-weight: bold;">Lessons Learned</h2>
+<ul style="color: #34495e; font-size: 1.1em;">
+  <li><b>Every bug teaches a lesson:</b> Some team members missed the Diwali party, but we didn’t want to miss the opportunity to learn from this bug to prevent similar issues in the future.</li>
+  <li><b>Choose the smartest testing approach:</b> Often, time is limited, so selecting a testing method that ensures quality within tight schedules is crucial.</li>
+  <li><b>The value of pairwise testing:</b> Pairwise testing is especially helpful when a module has multiple functions and options.</li>
+  <li><b>Focus on key combinations:</b> Instead of testing every possible combination, pairwise testing allows us to focus on the most important ones.</li>
+  <li><b>Catch hidden bugs more efficiently:</b> By testing these prioritized combinations, we can find hidden bugs faster.</li>
+  <li><b>Teamwork is essential:</b> Another important lesson was about teamwork during critical situations.</li>
+</ul>
+</div>
+
 <style>
-.blog-container {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    line-height: 1.7;
-    color: #2d3748;
-}
-
-.blog-header {
-    margin: 2rem 0 4rem;
-}
-
-.blog-title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: #1a202c;
-}
-
-.blog-meta {
-    font-size: 0.95rem;
-    color: #718096;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.reading-time::before {
-    content: "•";
-    margin-right: 1rem;
-}
-
-.featured-image {
-    width: 100%;
-    height: 300px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border-radius: 12px;
-    margin-bottom: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 3rem;
-}
-
-.blog-content {
-    font-size: 1.1rem;
-}
-
-.blog-content h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin: 3rem 0 1.5rem;
-    color: #1a202c;
-}
-
-.blog-content p {
-    margin-bottom: 1.5rem;
-}
-
-.highlight-box {
-    background: #f7fafc;
-    border-left: 4px solid #4a5568;
-    padding: 1.5rem;
-    margin: 2rem 0;
-    border-radius: 0 8px 8px 0;
-}
-
-.lessons-grid {
-    display: grid;
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.lesson-card {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.lesson-card h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    color: #2d3748;
-}
-
-.tag {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    background: #edf2f7;
-    color: #4a5568;
-    border-radius: 9999px;
-    font-size: 0.875rem;
-    margin-right: 0.5rem;
-}
-
-@media (max-width: 768px) {
-    .blog-title {
-        font-size: 2rem;
-    }
-    
-    .blog-content {
-        font-size: 1rem;
-    }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 </style>
-
-<div class="blog-container">
-    <header class="blog-header">
-        <div class="tag">Production</div>
-        <div class="tag">Bug Fix</div>
-        <div class="tag">Team Story</div>
-        
-        <h1 class="blog-title">When Production Met Puja: A Diwali Debug Story</h1>
-        
-        <div class="blog-meta">
-            <span>Oct 10, 2024</span>
-            <span class="reading-time">5 min read</span>
-        </div>
-    </header>
-
-    <div class="featured-image">
-        🪲 × 🪔
-    </div>
-
-    <article class="blog-content">
-        <p>
-            It was meant to be a celebration—team members in their festive best, the office adorned with lights, and the promise of a memorable Diwali party ahead. But as any seasoned developer knows, production bugs have an uncanny sense of timing.
-        </p>
-
-        <div class="highlight-box">
-            Just thirty minutes before the scheduled festivities, our monitoring system lit up like a string of Diwali lights—but not in the way we had hoped.
-        </div>
-
-        <h2>The Party Crasher Arrives</h2>
-        <p>
-            The initial report seemed deceptively simple: a minor glitch that surely could be fixed with a quick hotfix. As some team members headed to the party venue, a small group of us—front-end, back-end, QA, and PM—gathered in the boardroom, optimistically thinking we'd join the celebrations shortly.
-        </p>
-
-        <h2>Debug Mode: Activated</h2>
-        <p>
-            As we dove deeper, the complexity of the issue unfolded. The team initiated pairwise testing, methodically working through different combinations. After an hour of focused investigation, we finally discovered the culprit: a seemingly innocent variable name declaration that had slipped through our review process.
-        </p>
-
-        <h2>The Deployment Marathon</h2>
-        <p>
-            With the root cause identified, we moved through our deployment checklist: testing environment, staging, and finally production. By the time we pushed the hotfix live, the clock showed 10:15 PM—the Diwali party was winding down, but our spirits remained high knowing we'd protected our users' experience.
-        </p>
-
-        <h2>Key Takeaways</h2>
-        <div class="lessons-grid">
-            <div class="lesson-card">
-                <h3>The Bug as a Teacher</h3>
-                <p>While we missed the party, this incident provided valuable insights into our testing processes and helped prevent similar issues in the future.</p>
-            </div>
-
-            <div class="lesson-card">
-                <h3>Pairwise Testing Power</h3>
-                <p>When dealing with multiple functions and options, pairwise testing proved to be our most efficient approach to identifying the issue.</p>
-            </div>
-
-            <div class="lesson-card">
-                <h3>Team Synergy</h3>
-                <p>The incident highlighted how effective we could be when working together, even under pressure and during festive occasions.</p>
-            </div>
-        </div>
-    </article>
-</div>
