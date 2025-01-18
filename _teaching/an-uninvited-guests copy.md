@@ -24,22 +24,6 @@ Deployment Process
 ===
 Once we fixed the issue, it was time to test. Testing is crucial when deploying to production, so we tested on the test environment first, then moved it to staging. After a quick sanity check on staging, we got the sign-off for production. This whole process took around 5 hours, and by the time we deployed the hotfix on production, it was already 10:15 p.m., making us late to the party.
 
-Lessons Learned:
-====
-Unfortunately, this was just the beginning of the chain of errors:
-
-* <b>Assuming a Server Issue:</b> After the test environment became unresponsive, I failed to immediately investigate my recent update. Instead, I assumed the issue was related to the server itself and continued testing on another environment.
-
-* <b>Repeating the Error on UAT:</b> Believing the test environment issue was unrelated to my command, I logged into the UAT database and executed the same faulty command without reviewing it. Once again, the entire database was updated, causing the UAT environment to crash as well.
-
-* <b>Skipping Command Review:</b> At no point did I double-check the command syntax or review its impact before executing it, which could have prevented the cascading failures.
-
-* <b>Safe Update Mode Disabled:</b> The database did not have safe update mode enabled, which would have restricted such commands without a condition. Had this setting been active, the database would have raised an error, preventing the accidental mass update.
-
-Fixing the mess
-====
-The developers spent hours debugging the issue. Ultimately, they restored the configuration files by copying them from the production environment to the test and UAT servers. This process took another hour, during which the QA team remained idle. Finally, after a downtime of 4–5 hours, access to the test environment was restored, and testing could resume.
-
 Lessons Learned
 =====
 * <b>Every bug teaches a lesson:</b> Some team members missed the Diwali party, but we didn’t want to miss the opportunity to learn from this bug to prevent similar issues in the future.
