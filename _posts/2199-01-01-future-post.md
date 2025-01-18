@@ -22,7 +22,7 @@ This book written by Hector Gargia & Francesec Miralles highlights the secret of
 
 
  <p style="text-align: center;">
-  <img src="<img src='/images/ikigai.jpeg'>" alt="ikigai">
+  <img src='/images/ikigai.jpeg' alt="ikigai">
 </p>
 Ikigai The Japanese Secret to a Long and Happy Life by Hector Garcia and Francesc Miralles has been one of the most refreshing and insightful reads so far this year. The book introduces me to the concept of ikigai, a Japanese term that roughly translates to "a reason for being." This concept focuses on finding purpose and meaning in life, which I found both intriguing and relatable.
 
