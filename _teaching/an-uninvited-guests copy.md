@@ -8,47 +8,48 @@ date: 2024-10-10
 location: "City"
 ---
 
-<div style="max-width: 800px; margin: auto; background-color: #f8f9fa; padding: 40px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
-  <h1 style="color: #2c3e50; text-align: center; font-family: 'Merriweather', serif; font-size: 2.4em; margin-bottom: 30px; border-bottom: 3px solid #3498db; padding-bottom: 15px;">An Unexpected Bug Attended Diwali Party</h1>
+**Why Updating with a Condition is Important**
 
-  <div style="max-width: 700px; margin: auto; font-family: 'Open Sans', sans-serif; line-height: 1.8;">
-    <p style="text-align: justify; font-size: 1.1em; color: #2c3e50;">
-    It was a usual evening, and in just a couple of hours, the Diwali party was about to begin. Excitement was in the air, and everyone was looking forward to creating some memorable moments. Some people were dressed in ethnic wear, while others were in casual clothes, but the shared excitement and team spirit were clear. Before the party, everyone was trying to wrap up their work to enjoy the evening stress-free. But, as we all know, no software is perfect—sometimes, it's all about the timing when a bug shows up.
-    </p>
+It was a usual evening, and in just a couple of hours, the Diwali party was about to begin. Excitement was in the air, and everyone was looking forward to creating some memorable moments. Some people were dressed in ethnic wear, while others were in casual clothes, but the shared excitement and team spirit were clear. Before the party, everyone was trying to wrap up their work to enjoy the evening stress-free. But, as we all know, no software is perfect—sometimes, it’s all about the timing when a bug shows up.
 
-    <h2 style="color: #2c3e50; margin-top: 40px; font-weight: 600; font-size: 1.8em; border-left: 4px solid #e74c3c; padding-left: 15px;">Incident Reported</h2>
-    <p style="text-align: justify; font-size: 1.1em; color: #2c3e50;">
-    Just half an hour before finishing up, we got word of a bug in the production environment. Initially, it seemed like a simple issue that could be fixed quickly with a hotfix. But since it was already time for the Diwali party, some people started heading there, while my team gathered in the boardroom, hoping to solve the issue fast. Within 10 minutes, everyone was there—front-end, back-end, QA, and PM.
-    </p>
+Incident Reported
+=====
+Just half an hour before finishing up, we got word of a bug in the production environment. Initially, it seemed like a simple issue that could be fixed quickly with a hotfix. But since it was already time for the Diwali party, some people started heading there, while my team gathered in the boardroom, hoping to solve the issue fast. Within 10 minutes, everyone was there—front-end, back-end, QA, and PM.
 
-    <h2 style="color: #2c3e50; margin-top: 40px; font-weight: 600; font-size: 1.8em; border-left: 4px solid #e74c3c; padding-left: 15px;">Debugging Begins</h2>
-    <p style="text-align: justify; font-size: 1.1em; color: #2c3e50;">
-    With everyone in the room, we started digging into the problem. As time passed, we realized the debugging was getting more complicated. But finding the root cause was the priority before fixing it. The team began pairwise testing, trying out different combinations. After nearly an hour, we finally found the root cause: a small error in variable name declaration. Even though it seemed like a minor issue, every production bug is critical, so fixing it was our top priority.
-    </p>
+Debugging Begins
+====
+With everyone in the room, we started digging into the problem. As time passed, we realized the debugging was getting more complicated. But finding the root cause was the priority before fixing it. The team began pairwise testing, trying out different combinations. After nearly an hour, we finally found the root cause: a small error in variable name declaration. Even though it seemed like a minor issue, every production bug is critical, so fixing it was our top priority.
 
-    <h2 style="color: #2c3e50; margin-top: 40px; font-weight: 600; font-size: 1.8em; border-left: 4px solid #e74c3c; padding-left: 15px;">Deployment Process</h2>
-    <p style="text-align: justify; font-size: 1.1em; color: #2c3e50;">
-    Once we fixed the issue, it was time to test. Testing is crucial when deploying to production, so we tested on the test environment first, then moved it to staging. After a quick sanity check on staging, we got the sign-off for production. This whole process took around 5 hours, and by the time we deployed the hotfix on production, it was already 10:15 p.m., making us late to the party.
-    </p>
+Deployment Process
+===
+Once we fixed the issue, it was time to test. Testing is crucial when deploying to production, so we tested on the test environment first, then moved it to staging. After a quick sanity check on staging, we got the sign-off for production. This whole process took around 5 hours, and by the time we deployed the hotfix on production, it was already 10:15 p.m., making us late to the party.
 
-    <div style="background-color: #ffffff; padding: 30px; border-radius: 12px; margin-top: 40px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
-      <h2 style="color: #2c3e50; font-weight: 600; font-size: 1.8em; margin-bottom: 20px; border-left: 4px solid #e74c3c; padding-left: 15px;">Lessons Learned</h2>
-      <ul style="color: #2c3e50; font-size: 1.1em; padding-left: 20px;">
-        <li style="margin-bottom: 10px;"><strong>Every bug teaches a lesson:</strong> Some team members missed the Diwali party, but we didn't want to miss the opportunity to learn from this bug to prevent similar issues in the future.</li>
-        <li style="margin-bottom: 10px;"><strong>Choose the smartest testing approach:</strong> Often, time is limited, so selecting a testing method that ensures quality within tight schedules is crucial.</li>
-        <li style="margin-bottom: 10px;"><strong>The value of pairwise testing:</strong> Pairwise testing is especially helpful when a module has multiple functions and options.</li>
-        <li style="margin-bottom: 10px;"><strong>Focus on key combinations:</strong> Instead of testing every possible combination, pairwise testing allows us to focus on the most important ones.</li>
-        <li style="margin-bottom: 10px;"><strong>Catch hidden bugs more efficiently:</strong> By testing these prioritized combinations, we can find hidden bugs faster.</li>
-        <li style="margin-bottom: 10px;"><strong>Teamwork is essential:</strong> Another important lesson was about teamwork during critical situations.</li>
-      </ul>
-    </div>
-  </div>
-</div>
+Lessons Learned:
+====
+Unfortunately, this was just the beginning of the chain of errors:
 
-<style>
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-</style>
+* <b>Assuming a Server Issue:</b> After the test environment became unresponsive, I failed to immediately investigate my recent update. Instead, I assumed the issue was related to the server itself and continued testing on another environment.
 
+* <b>Repeating the Error on UAT:</b> Believing the test environment issue was unrelated to my command, I logged into the UAT database and executed the same faulty command without reviewing it. Once again, the entire database was updated, causing the UAT environment to crash as well.
+
+* <b>Skipping Command Review:</b> At no point did I double-check the command syntax or review its impact before executing it, which could have prevented the cascading failures.
+
+* <b>Safe Update Mode Disabled:</b> The database did not have safe update mode enabled, which would have restricted such commands without a condition. Had this setting been active, the database would have raised an error, preventing the accidental mass update.
+
+Fixing the mess
+====
+The developers spent hours debugging the issue. Ultimately, they restored the configuration files by copying them from the production environment to the test and UAT servers. This process took another hour, during which the QA team remained idle. Finally, after a downtime of 4–5 hours, access to the test environment was restored, and testing could resume.
+
+Lessons Learned
+=====
+* <b>Every bug teaches a lesson:</b> Some team members missed the Diwali party, but we didn’t want to miss the opportunity to learn from this bug to prevent similar issues in the future.
+
+* <b>Choose the smartest testing approach:</b> Often, time is limited, so selecting a testing method that ensures quality within tight schedules is crucial.
+
+* <b>The value of pairwise testing:</b> Pairwise testing is especially helpful when a module has multiple functions and options.
+
+* <b>Focus on key combinations:</b> Instead of testing every possible combination, pairwise testing allows us to focus on the most important ones.
+
+* <b>Catch hidden bugs more efficiently:</b> By testing these prioritized combinations, we can find hidden bugs faster.
+
+* <b>Teamwork is essential:</b> Another important lesson was about teamwork during critical situations.
