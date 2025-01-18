@@ -8,9 +8,11 @@ date: 2024-10-10
 location: "City"
 ---
 
-<div style="max-width: 800px; margin: auto; background-color: #ffffff; padding: 30px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
-  <h1 style="color: #2c3e50; text-align: center; font-family: 'Merriweather', serif; font-size: 2.5em; animation: fadeIn 1s ease-in-out;">An Unexpected Bug Attended Diwali Party</h1>
+<div style="max-width: 600px; margin: auto; background-color: #ffffff; padding: 30px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+  <h1 style="color: #2c3e50; text-align: center; font-family: 'Merriweather', serif; font-size: 2.2em; animation: fadeIn 1s ease-in-out;">An Unexpected Bug Attended Diwali Party</h1>
 </div>
+
+<div style="margin-top: 20px;"></div> <!-- Added gap between title box and content -->
 
 <div style="max-width: 800px; margin: auto; font-family: 'Open Sans', sans-serif; line-height: 1.6;">
   
@@ -25,29 +27,4 @@ Just half an hour before finishing up, we got word of a bug in the production en
 
 <h2 style="color: #2980b9; margin-top: 40px; font-weight: bold;">Debugging Begins</h2>
 <p style="text-align: justify; font-size: 1.1em; color: #34495e;">
-With everyone in the room, we started digging into the problem. As time passed, we realized the debugging was getting more complicated. But finding the root cause was the priority before fixing it. The team began pairwise testing, trying out different combinations. After nearly an hour, we finally found the root cause: a small error in variable name declaration. Even though it seemed like a minor issue, every production bug is critical, so fixing it was our top priority.
-</p>
-
-<h2 style="color: #2980b9; margin-top: 40px; font-weight: bold;">Deployment Process</h2>
-<p style="text-align: justify; font-size: 1.1em; color: #34495e;">
-Once we fixed the issue, it was time to test. Testing is crucial when deploying to production, so we tested on the test environment first, then moved it to staging. After a quick sanity check on staging, we got the sign-off for production. This whole process took around 5 hours, and by the time we deployed the hotfix on production, it was already 10:15 p.m., making us late to the party.
-</p>
-
-<div style="background-color: #ecf0f1; padding: 30px; border-radius: 15px; margin-top: 40px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
-<h2 style="color: #2c3e50; font-weight: bold;">Lessons Learned</h2>
-<ul style="color: #34495e; font-size: 1.1em;">
-  <li><b>Every bug teaches a lesson:</b> Some team members missed the Diwali party, but we didn’t want to miss the opportunity to learn from this bug to prevent similar issues in the future.</li>
-  <li><b>Choose the smartest testing approach:</b> Often, time is limited, so selecting a testing method that ensures quality within tight schedules is crucial.</li>
-  <li><b>The value of pairwise testing:</b> Pairwise testing is especially helpful when a module has multiple functions and options.</li>
-  <li><b>Focus on key combinations:</b> Instead of testing every possible combination, pairwise testing allows us to focus on the most important ones.</li>
-  <li><b>Catch hidden bugs more efficiently:</b> By testing these prioritized combinations, we can find hidden bugs faster.</li>
-  <li><b>Teamwork is essential:</b> Another important lesson was about teamwork during critical situations.</li>
-</ul>
-</div>
-
-<style>
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-</style>
+With everyone in the room, we started digging into the problem. As time passed, we realized the debugging was getting more complicated. But finding the root cause was the priority before fixing it. The team began pairwise testing, trying out different combinations. After nearly an hour, we finally found the root cause: a small error in variable name declaration. Even though it seemed like a mino
