@@ -8,13 +8,7 @@ tags:
   - Japanese
 ---
 
-<div class="book-review">
-  <div class="meta">
-    <span>By Hector Gargia & Francesec Miralles</span> • 
-    <span>Published 2016</span> • 
-    <span>5 min read</span> • 
-    <span style="color: #ffd700;">★★★★★</span>
-  </div>
+
 
   This book written by Hector Gargia & Francesec Miralles highlights the secret of Japanese lifestyle...
 
