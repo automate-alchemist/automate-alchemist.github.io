@@ -18,9 +18,7 @@ tags:
   <span style="color: #ffd700;">★★★★★</span>
 </div>
 
-  <p style="text-align: center;">
-  <img src="/images/lessons-in-chemistry.jpg" alt="lessons in chemistry">
-</p>
+<p style="text-align: center;"><img src="/images/lessons-in-chemistry.jpg" alt="lessons in chemistry"></p>
 
 Lessons in Chemistry is a novel by Bonnie Garmus, published in 2022. It is a story of Elizabeth Zott, a chemist who faces sexism and inequality in the 1960s workplace. The book highlights her journey where she tries to break societal norms and wants to be treated just as a chemist rather than a "female chemist."
 
