@@ -9,29 +9,25 @@ tags:
 ---
 
 <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 20px; color: #666;">
-  <span>By Bonnie Garmus</span>
+  <span>By Hector Gargia & Francesec Miralles</span>
   <span>•</span>
-  <span>Published 2022</span>
+  <span>Published 2013</span>
   <span>•</span>
-  <span>5 min read</span>
+  <span>3 min read</span>
   <span>•</span>
   <span style="color: #ffd700;">★★★★★</span>
 </div>
 
-A book which is less than just a book but more of collection of the best writings of Ahmed Faraz. 
+This book written by Hector Gargia & Francesec Miralles highlights the secret of Japanese lifestyle...
+
+<p>
+<img src="/images/ikigai.jpeg" alt="ikigai" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"></p>
 
 
-<p style="text-align: center;">
-<img src="/images/ye-meri-ghazalein.jpg" alt="ye meri ghazalein">
-</p>
+Ikigai The Japanese Secret to a Long and Happy Life by Hector Garcia and Francesc Miralles has been one of the most refreshing and insightful reads so far this year. The book introduces me to the concept of ikigai, a Japanese term that roughly translates to "a reason for being." This concept focuses on finding purpose and meaning in life, which I found both intriguing and relatable.
 
-Ye Meri Ghazalein, Ye Meri Nazmein by Ahmad Faraz has been a deeply enriching read. The collection of his poetry captures a wide range of emotions—love, loss, yearning, and reflection—in a way that’s both profound and accessible. Faraz’s words often feel like they’re coming from a place of personal experience, but they’re also universal enough to resonate with anyone who’s felt the weight of love or heartbreak. His ability to express complex feelings with simplicity and grace is something I really admire.
+The authors explore how embracing the philosophy of ikigai can lead to a more fulfilling and long life. They make it clear that living with purpose isn’t just a lofty idea, but a practical approach to well-being and longevity.
 
-One of the most favorite ghazal is : 
+Much of the inspiration for the book comes from Okinawa, a region known for its high number of centenarians. I was fascinated to learn about the lifestyle habits of the people there. These habits, it turns out, are simple yet powerful choices that contribute to their health and happiness over the years.
 
-रंग थे जो कभी चेहरे पे, उनका क्या हुआ।
-अब के हमने जो कहा, सुन के क्या हुआ ।।
-
-In this verse, Faraz perfectly captures the transient nature of emotions, how things that once brought joy and color to life can fade away, leaving behind only memories and unspoken words. There’s a bittersweetness to this, which is a recurring theme in many of his works. His poetry often makes me pause and reflect on how fleeting yet meaningful certain moments can be.
-
-Each ghazal and nazm in this collection offers something to ponder, whether it’s about personal identity, the pain of separation, or the hope for a better tomorrow. For anyone who enjoys reflective and introspective poetry, this book is a gem.
+The authors dive into these habits in detail, connecting them to the concept of ikigai and showing how small changes in daily life can create a significant impact on overall well-being. It’s not about extreme practices, but about living with intention and balance.
