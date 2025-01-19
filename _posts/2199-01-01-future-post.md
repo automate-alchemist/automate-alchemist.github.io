@@ -18,17 +18,16 @@ tags:
   <span style="color: #ffd700;">★★★★★</span>
 </div>
 
-<p style="text-align: center;"><img src="/images/lessons-in-chemistry.jpg" alt="lessons in chemistry"></p>
+This book written by Hector Gargia & Francesec Miralles highlights the secret of Japanese lifestyle...
 
-Lessons in Chemistry is a novel by Bonnie Garmus, published in 2022. It is a story of Elizabeth Zott, a chemist who faces sexism and inequality in the 1960s workplace. The book highlights her journey where she tries to break societal norms and wants to be treated just as a chemist rather than a "female chemist."
+<p>
+<img src="/images/ikigai.jpeg" alt="ikigai" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"></p>
 
-Lessons in Chemistry is one of my favorite books that I have read so far. Elizabeth is a brilliant chemist in the 1960s who refuses to bow to the rampant sexism and inequality of her time. From the very first chapter, I admired her fierce determination to live life on her own terms, whether that meant standing up for her values or ignoring outdated opinions about her personal choices.
 
-The book doesn't shy away from showcasing the darker realities of that era, especially when it comes to the challenges women faced in the workplace. The portrayal of sexual assault and misogyny is unflinching and, at times, uncomfortable to read—but it feels necessary to the story.
+Ikigai The Japanese Secret to a Long and Happy Life by Hector Garcia and Francesc Miralles has been one of the most refreshing and insightful reads so far this year. The book introduces me to the concept of ikigai, a Japanese term that roughly translates to "a reason for being." This concept focuses on finding purpose and meaning in life, which I found both intriguing and relatable.
 
-I also loved how science played such a central role in the plot. Through Zott's work, there are little glimpses into chemistry that make the story even more engaging. Later, when she takes on the unlikely role of a TV cooking show host, the humor really shines. Instead of sticking to the producers' script, she uses the platform to teach science through cooking while inspiring women to value themselves and pursue their dreams. It's such a refreshing and empowering twist.
+The authors explore how embracing the philosophy of ikigai can lead to a more fulfilling and long life. They make it clear that living with purpose isn’t just a lofty idea, but a practical approach to well-being and longevity.
 
-The characters are fantastic too. Beyond Elizabeth, there are several other characters in the book that make it an interesting read, like Calvin and Mad, her sharp and lovable daughter. Mad's cleverness and kindness mirror her mother in the best way. Even the family dog, Six-Thirty, is a standout. His brief perspective in the story adds a unique and surprisingly touching element. The growth of the female characters, as they challenge societal expectations and find solidarity, feels just as relevant today as it would have been back then.
+Much of the inspiration for the book comes from Okinawa, a region known for its high number of centenarians. I was fascinated to learn about the lifestyle habits of the people there. These habits, it turns out, are simple yet powerful choices that contribute to their health and happiness over the years.
 
-Even though the cover of the book suggests that it's a romantic comedy, it’s far from it. It is a deeper story about resilience, family, grief, and staying true to yourself. Fast-paced and incredibly engaging, it's the kind of book that's hard to put down. If you're looking for a meaningful, unforgettable read, this is it.
-
+The authors dive into these habits in detail, connecting them to the concept of ikigai and showing how small changes in daily life can create a significant impact on overall well-being. It’s not about extreme practices, but about living with intention and balance.
