@@ -10,7 +10,7 @@ tags:
 
   This book written by Hector Gargia & Francesec Miralles highlights the secret of Japanese lifestyle...
 
-  <img src="/images/ikigai.jpeg" alt="ikigai" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+<img src="/images/ikigai.jpeg" alt="ikigai" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
 </div>
 
 
