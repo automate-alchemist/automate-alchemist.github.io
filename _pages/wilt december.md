@@ -7,7 +7,6 @@ author_profile: true
 
 <div class="wilt-container">
   <header class="wilt-header">
-    <h1>What I Learned Today</h1>
     <p>Documenting daily discoveries and insights in technology and personal growth</p>
   </header>
   <div class="timeline">
