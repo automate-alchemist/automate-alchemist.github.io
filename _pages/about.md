@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "Hello World!"
 author_profile: true
 redirect_from: 
   - /about/
@@ -8,7 +8,7 @@ redirect_from:
 ---
 <div class="test-laboratory">
   <div class="hero-section">
-    <h1>Hello World!</h1>
+    
     <div class="typewriter">
       <p>Hi, I'm Ujjwal Kumar Singh</p>
       <p>Software Tester</p>
