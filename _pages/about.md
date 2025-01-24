@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome To Automate Alchemist"
+title: "Hello World!"
 author_profile: true
 redirect_from: 
   - /about/
@@ -8,11 +8,11 @@ redirect_from:
 ---
 <div class="test-laboratory">
   <div class="hero-section">
-    <h1>🧪 Hello World!</h1>
+    
     <div class="typewriter">
       <p>Hi, I'm Ujjwal Kumar Singh</p>
       <p>Software Tester</p>
-      <p>Uncovering Glitches & Crafting Quality since 2021.</p>
+      <p>Uncovering Glitches & Crafting Quality since 3+ Years.</p>
     </div>
   </div>
   <div class="skills-section">
