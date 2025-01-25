@@ -5,7 +5,7 @@ layout: compress
 {% include base_path %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js" data-theme="light">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
@@ -17,97 +17,39 @@ layout: compress
       gtag('js', new Date());
       gtag('config', 'G-WH6DCWQ1RE');
     </script>
-<!-- Add this to your _includes/head/custom.html or similar layout file -->
-<script>
-  // Check for saved dark mode preference or system preference
-  function checkDarkMode() {
-    if (localStorage.getItem('darkMode') === 'enabled' || 
-        (window.matchMedia && 
-         window.matchMedia('(prefers-color-scheme: dark)').matches && 
-         localStorage.getItem('darkMode') !== 'disabled')) {
-      document.body.classList.add('dark-mode');
-    }
-  }
 
-  // Run on page load
-  checkDarkMode();
+    <style>
+      :root {
+        --bg-color: #ffffff;
+        --text-color: #333333;
+        --link-color: #0366d6;
+        --bg-secondary: #f6f8fa;
+      }
 
-  // Function to toggle dark mode
-  function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    
-    // Save user preference
-    if (document.body.classList.contains('dark-mode')) {
-      localStorage.setItem('darkMode', 'enabled');
-    } else {
-      localStorage.setItem('darkMode', 'disabled');
-    }
-  }
+      :root[data-theme='dark'] {
+        --bg-color: #121212;
+        --text-color: #e0e0e0;
+        --link-color: #58a6ff;
+        --bg-secondary: #1e1e1e;
+      }
 
-  // Add event listener to handle system dark mode changes
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', checkDarkMode);
-</script>
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        transition: background-color 0.3s, color 0.3s;
+      }
 
-<style>
-  /* Dark mode styles */
-  body {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --link-color: #0366d6;
-    --bg-secondary: #f6f8fa;
-    
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  body.dark-mode {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --link-color: #58a6ff;
-    --bg-secondary: #1e1e1e;
-    
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
-  
-  body.dark-mode a {
-    color: var(--link-color);
-  }
-  
-  /* Dark mode button styles */
-  .dark-mode-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    z-index: 1000;
-  }
-  
-  .dark-mode-toggle:focus {
-    outline: none;
-  }
-</style>
-
-<!-- Add this button to your default.html layout or wherever you want the toggle -->
-<button onclick="toggleDarkMode()" class="dark-mode-toggle" aria-label="Toggle dark mode">
-  🌓
-</button>
-  
-    
+      a {
+        color: var(--link-color);
+      }
+    </style>
   </head>
 
   <body>
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    <!-- Dark Mode Toggle Button -->
-    <button onclick="toggleDarkMode()" class="dark-mode-toggle" aria-label="Toggle dark mode">
-      🌓
-    </button>
+    {% include dark-mode-toggle.html %}
 
     {{ content }}
 
