@@ -5,51 +5,25 @@ layout: compress
 {% include base_path %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js" data-theme="light">
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WH6DCWQ1RE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-WH6DCWQ1RE');
-    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WH6DCWQ1RE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <style>
-      :root {
-        --bg-color: #ffffff;
-        --text-color: #333333;
-        --link-color: #0366d6;
-        --bg-secondary: #f6f8fa;
-      }
-
-      :root[data-theme='dark'] {
-        --bg-color: #121212;
-        --text-color: #e0e0e0;
-        --link-color: #58a6ff;
-        --bg-secondary: #1e1e1e;
-      }
-
-      body {
-        background-color: var(--bg-color);
-        color: var(--text-color);
-        transition: background-color 0.3s, color 0.3s;
-      }
-
-      a {
-        color: var(--link-color);
-      }
-    </style>
+  gtag('config', 'G-WH6DCWQ1RE');
+</script>
   </head>
 
   <body>
+
     {% include browser-upgrade.html %}
     {% include masthead.html %}
-
-    {% include dark-mode-toggle.html %}
 
     {{ content }}
 
@@ -61,5 +35,6 @@ layout: compress
     </div>
 
     {% include scripts.html %}
+
   </body>
 </html>
