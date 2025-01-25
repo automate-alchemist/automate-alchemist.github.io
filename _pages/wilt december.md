@@ -7,6 +7,7 @@ author_profile: true
 
 <div class="wilt-container">
   <header class="wilt-header">
+  
     <p>Documenting daily discoveries and insights in technology and personal growth</p>
   </header>
   <div class="timeline">
@@ -14,20 +15,16 @@ author_profile: true
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <div class="entry-date">12th January</div>
-        <h2>AI Articles: Applications in Testing</h2>
-        <p>Explored AI applications in software testing.</p> 
-        <p>Learning</p>
-          <p>Explored AI applications in software testing.<p>
+
+                <p><h3>Learning : </h3> Explored AI applications in software testing.<p>
         
-          <p>Description</p>
-          <p>I read several online articles about the emerging role of AI in software testing, particularly how it can help in automating test case generation, bug detection, and even predicting potential issues based on historical data.<p>
-          <p>Key Takeaway</p>
-         <p>AI can revolutionize the testing process by reducing manual efforts and improving test coverage. Its ability to predict defects and automate repetitive tasks offers a significant efficiency boost.</p>
+          <p>h3>Description : </h3> I read several online articles about the emerging role of AI in software testing, particularly how it can help in automating test case generation, bug detection, and even predicting potential issues based on historical data.<p>
+          <p><h3>Key Takeaway :</h3>AI can revolutionize the testing process by reducing manual efforts and improving test coverage. Its ability to predict defects and automate repetitive tasks offers a significant efficiency boost.</p>
         
 
-        <p>Personal Reflection</p>
-          <p>I'm excited about the possibilities of AI in testing. It could drastically improve how we approach quality assurance in the future, and I'm eager to explore this further.</p>
-   
+        <p><h3>Personal Reflection : </h3> I'm excited about the possibilities of AI in testing. It could drastically improve how we approach quality assurance in the future, and I'm eager to explore this further.</p>
+      </div>
+    </article>
     <article class="timeline-entry">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
