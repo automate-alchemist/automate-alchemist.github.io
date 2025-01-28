@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Work Experience"
+title: "Work experience"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,118 +8,77 @@ redirect_from:
 ---
 
 <style>
-.cv-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+/* Base Styles */
+.archive {
+    padding-right: 0;
 }
 
-/* Header Section */
-.cv-header {
-    text-align: center;
-    margin-bottom: 3rem;
-    padding: 2rem;
-    background: linear-gradient(135deg, #f6f9fc 0%, #f1f4f8 100%);
-    border-radius: 16px;
-    position: relative;
-    overflow: hidden;
+.experience-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
 }
 
-.cv-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #2196F3, #00BCD4);
-}
-
-/* Experience Timeline */
+/* Your Original Timeline Styles */
 .timeline {
     position: relative;
-    margin: 3rem 0;
+    padding: 20px 0;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 3px;
-    height: 100%;
-    background: linear-gradient(180deg, #2196F3 0%, #00BCD4 100%);
-    border-radius: 3px;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #2196F3;
 }
 
 .experience-card {
     position: relative;
-    width: calc(50% - 30px);
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin: 30px 0 30px 55px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
+    border: 1px solid #eaeaea;
 }
 
 .experience-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .experience-card::before {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background: white;
-    border: 4px solid #2196F3;
+    left: -42px;
+    top: 25px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.2);
-    z-index: 1;
-}
-
-.experience-card:nth-child(odd) {
-    margin-left: auto;
-    padding-left: 2rem;
-}
-
-.experience-card:nth-child(odd)::before {
-    left: -40px;
-}
-
-.experience-card:nth-child(even) {
-    padding-right: 2rem;
-}
-
-.experience-card:nth-child(even)::before {
-    right: -40px;
+    background: #fff;
+    border: 3px solid #2196F3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
 }
 
 .job-title {
-    font-size: 1.4rem;
+    font-size: 1.25em;
     color: #1976D2;
-    margin-bottom: 0.5rem;
+    margin: 0 0 8px 0;
     font-weight: 600;
+    line-height: 1.3;
 }
 
 .company {
-    display: flex;
-    align-items: center;
-    color: #546E7A;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #f0f0f0;
-}
-
-.company::before {
-    content: '🏢';
-    margin-right: 8px;
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
 }
 
 .duties {
@@ -129,21 +88,21 @@ redirect_from:
 }
 
 .duties li {
-    margin: 0.8rem 0;
-    padding-left: 1.5rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
     position: relative;
     line-height: 1.6;
 }
 
 .duties li::before {
-    content: '→';
+    content: '•';
+    color: #2196F3;
     position: absolute;
     left: 0;
-    color: #2196F3;
     font-weight: bold;
 }
 
-/* Skills Section */
+/* Enhanced Skills Section */
 .skills-section {
     margin: 4rem 0;
     padding: 2rem;
@@ -213,12 +172,13 @@ redirect_from:
     transform: translateY(-2px);
 }
 
-/* Education Section */
+/* Enhanced Education Section */
 .education-section {
     padding: 2rem;
     background: white;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 4rem;
 }
 
 .education-grid {
@@ -275,24 +235,23 @@ redirect_from:
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .timeline::before {
-        left: 0;
+    .experience-container {
+        padding: 0 15px;
     }
-
+    
     .experience-card {
-        width: calc(100% - 30px);
-        margin-left: 30px;
+        margin-left: 45px;
+        padding: 20px;
     }
-
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
     .experience-card::before {
-        left: -30px !important;
+        left: -37px;
     }
-
-    .experience-card:nth-child(odd),
-    .experience-card:nth-child(even) {
-        padding: 1.5rem;
-    }
-
+    
     .skills-grid,
     .education-grid {
         grid-template-columns: 1fr;
@@ -300,14 +259,8 @@ redirect_from:
 }
 </style>
 
-<div class="cv-container">
-    <div class="cv-header">
-        <h1>Professional Experience</h1>
-        <p>Software Development Engineer in Test | Quality Assurance Specialist</p>
-    </div>
-
+<div class="experience-container">
     <div class="timeline">
-        <!-- Experience cards remain the same, just update the class names -->
         <div class="experience-card">
             <div class="job-title">SDET (Software Development Engineer in Test)</div>
             <div class="company">Skeps (Jun. 2024 - Present)</div>
@@ -317,6 +270,7 @@ redirect_from:
                 <li>Performed API and webhook testing to validate system functionalities, ensuring seamless loan facilitation.</li>
             </ul>
         </div>
+
         <div class="experience-card">
             <div class="job-title">Analyst</div>
             <div class="company">Studiographene (Mar. 2023 - Jun. 2024)</div>
@@ -347,7 +301,6 @@ redirect_from:
             </ul>
         </div>
     </div>
-    
 
     <div class="skills-section">
         <h2>Technical Expertise</h2>
@@ -383,6 +336,9 @@ redirect_from:
                     <span class="skill-tag">Docker</span>
                     <span class="skill-tag">Katalon</span>
                     <span class="skill-tag">Postbot</span>
+                    <span class="skill-tag">Chat-GPT</span>
+                    <span class="skill-tag">Co-Pilot</span>
+                    <span class="skill-tag">Claude</span>
                 </div>
             </div>
         </div>
