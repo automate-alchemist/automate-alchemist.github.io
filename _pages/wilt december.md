@@ -7,7 +7,7 @@ author_profile: true
 
 <div class="wilt-container">
   <header class="wilt-header">
-    <h1>What I Learned Today</h1>
+    
     <p>Documenting daily discoveries and insights in technology and personal growth</p>
     
     <div class="category-filter">
@@ -25,7 +25,7 @@ author_profile: true
       <div class="timeline-content">
         <div class="entry-header">
           <span class="entry-date">12th January</span>
-          <span class="category-tag">Testing</span>
+          <span class="category-tag" role="button" data-category="testing">Testing</span>
         </div>
         <h2>AI Articles: Applications in Testing</h2>
         <div class="entry-preview">
@@ -50,7 +50,7 @@ author_profile: true
       <div class="timeline-content">
         <div class="entry-header">
           <span class="entry-date">11th January</span>
-          <span class="category-tag">Personal Growth</span>
+          <span class="category-tag" role="button" data-category="personal">Personal Growth</span>
         </div>
         <h2>Ikigai: Understanding Purpose</h2>
         <div class="entry-preview">
@@ -69,16 +69,13 @@ author_profile: true
       </div>
     </article>
 
-    <!-- Continue with all entries from January 10th to January 1st -->
-    <!-- I'll provide some key entries to show the pattern, let me know if you want to see the complete set -->
-
     <!-- January 10th Entry -->
     <article class="timeline-entry" data-category="testing">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <div class="entry-header">
           <span class="entry-date">10th January</span>
-          <span class="category-tag">Testing</span>
+          <span class="category-tag" role="button" data-category="testing">Testing</span>
         </div>
         <h2>Pytest: Test Reporting</h2>
         <div class="entry-preview">
@@ -96,9 +93,6 @@ author_profile: true
         </div>
       </div>
     </article>
-
-    <!-- Would you like me to continue with all entries? The pattern remains the same for each entry -->
-
   </div>
 
   <div class="archives-link">
@@ -197,6 +191,12 @@ author_profile: true
   color: #4299e1;
   border-radius: 12px;
   font-size: 0.8em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-tag:hover {
+  background: rgba(66, 153, 225, 0.2);
 }
 
 .entry-preview {
@@ -303,21 +303,33 @@ function toggleContent(button) {
   full.classList.toggle('hidden');
 }
 
+function filterEntries(category) {
+  // Remove active class from all buttons
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  // Add active class to the button with matching category
+  document.querySelector(`.filter-btn[data-category="${category}"]`).classList.add('active');
+  
+  document.querySelectorAll('.timeline-entry').forEach(entry => {
+    if (category === 'all' || entry.dataset.category === category) {
+      entry.style.display = 'block';
+    } else {
+      entry.style.display = 'none';
+    }
+  });
+}
+
+// Event listeners for filter buttons
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', function() {
-    // Remove active class from all buttons
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    // Add active class to clicked button
-    this.classList.add('active');
-    
+    filterEntries(this.dataset.category);
+  });
+});
+
+// Event listeners for category tags
+document.querySelectorAll('.category-tag').forEach(tag => {
+  tag.addEventListener('click', function() {
     const category = this.dataset.category;
-    document.querySelectorAll('.timeline-entry').forEach(entry => {
-      if (category === 'all' || entry.dataset.category === category) {
-        entry.style.display = 'block';
-      } else {
-        entry.style.display = 'none';
-      }
-    });
+    filterEntries(category);
   });
 });
 </script>
