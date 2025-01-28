@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Work experience"
+title: "Work Experience"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,76 +8,118 @@ redirect_from:
 ---
 
 <style>
-/* Ensure our styles work with the archive layout */
-.archive {
-    padding-right: 0;
+.cv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-.experience-container {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 20px;
+/* Header Section */
+.cv-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f6f9fc 0%, #f1f4f8 100%);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
 }
 
+.cv-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #2196F3, #00BCD4);
+}
+
+/* Experience Timeline */
 .timeline {
     position: relative;
-    padding: 20px 0;
+    margin: 3rem 0;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 25px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: #2196F3;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #2196F3 0%, #00BCD4 100%);
+    border-radius: 3px;
 }
 
 .experience-card {
     position: relative;
-    margin: 30px 0 30px 55px;
-    padding: 25px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    width: calc(50% - 30px);
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    border: 1px solid #eaeaea;
 }
 
 .experience-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
 .experience-card::before {
     content: '';
     position: absolute;
-    left: -42px;
-    top: 25px;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 4px solid #2196F3;
     border-radius: 50%;
-    background: #fff;
-    border: 3px solid #2196F3;
-    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.2);
+    z-index: 1;
+}
+
+.experience-card:nth-child(odd) {
+    margin-left: auto;
+    padding-left: 2rem;
+}
+
+.experience-card:nth-child(odd)::before {
+    left: -40px;
+}
+
+.experience-card:nth-child(even) {
+    padding-right: 2rem;
+}
+
+.experience-card:nth-child(even)::before {
+    right: -40px;
 }
 
 .job-title {
-    font-size: 1.25em;
+    font-size: 1.4rem;
     color: #1976D2;
-    margin: 0 0 8px 0;
+    margin-bottom: 0.5rem;
     font-weight: 600;
-    line-height: 1.3;
 }
 
 .company {
-    color: #666;
-    font-size: 0.95em;
-    margin-bottom: 15px;
-    display: block;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #546E7A;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.company::before {
+    content: '🏢';
+    margin-right: 8px;
 }
 
 .duties {
@@ -87,149 +129,185 @@ redirect_from:
 }
 
 .duties li {
-    margin-bottom: 10px;
-    padding-left: 20px;
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
     position: relative;
     line-height: 1.6;
 }
 
 .duties li::before {
-    content: '•';
-    color: #2196F3;
+    content: '→';
     position: absolute;
     left: 0;
+    color: #2196F3;
     font-weight: bold;
 }
 
+/* Skills Section */
 .skills-section {
-    margin-top: 50px;
-    background: #f8f9fa;
-    padding: 30px;
-    border-radius: 8px;
+    margin: 4rem 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .skill-category {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .skill-category h3 {
     color: #1976D2;
-    margin: 0 0 15px 0;
-    padding-bottom: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
     border-bottom: 2px solid #e0e0e0;
-    font-size: 1.1em;
-}
-
-.skill-category ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.skill-category li {
-    margin-bottom: 8px;
-    padding-left: 20px;
     position: relative;
 }
 
-.skill-category li::before {
-    content: '→';
-    color: #2196F3;
+.skill-category h3::after {
+    content: '';
     position: absolute;
+    bottom: -2px;
     left: 0;
+    width: 50px;
+    height: 2px;
+    background: #2196F3;
 }
 
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    padding: 0.5rem 1rem;
+    background: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #546E7A;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    background: #2196F3;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Education Section */
 .education-section {
-    margin-top: 50px;
-    padding: 30px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    border: 1px solid #eaeaea;
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-.education-section h2 {
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.education-card {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.education-card h3 {
     color: #1976D2;
-    margin: 0 0 20px 0;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 0.5rem;
 }
 
-.education-section ul {
-    list-style: none;
-    padding: 0;
+.education-card p {
+    color: #546E7A;
     margin: 0;
-}
-
-.education-section li {
-    margin-bottom: 12px;
-    padding-left: 25px;
-    position: relative;
-}
-
-.education-section li::before {
-    content: '🎓';
-    position: absolute;
-    left: 0;
 }
 
 .download-button {
     display: inline-block;
-    margin-top: 40px;
-    padding: 12px 28px;
-    background: #2196F3;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
     color: white;
     text-decoration: none;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+    border-radius: 30px;
     font-weight: 500;
-    border: none;
-    box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
 }
 
 .download-button:hover {
-    background: #1976D2;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+    box-shadow: 0 8px 25px rgba(33, 150, 243, 0.4);
 }
 
-/* Responsive adjustments */
+.download-button::before {
+    content: '📄';
+    margin-right: 8px;
+}
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-    .experience-container {
-        padding: 0 15px;
-    }
-    
-    .experience-card {
-        margin-left: 45px;
-        padding: 20px;
-    }
-    
     .timeline::before {
-        left: 20px;
+        left: 0;
     }
-    
+
+    .experience-card {
+        width: calc(100% - 30px);
+        margin-left: 30px;
+    }
+
     .experience-card::before {
-        left: -37px;
+        left: -30px !important;
     }
-    
-    .skills-grid {
+
+    .experience-card:nth-child(odd),
+    .experience-card:nth-child(even) {
+        padding: 1.5rem;
+    }
+
+    .skills-grid,
+    .education-grid {
         grid-template-columns: 1fr;
     }
 }
 </style>
 
-<div class="experience-container">
+<div class="cv-container">
+    <div class="cv-header">
+        <h1>Professional Experience</h1>
+        <p>Software Development Engineer in Test | Quality Assurance Specialist</p>
+    </div>
+
     <div class="timeline">
+        <!-- Experience cards remain the same, just update the class names -->
         <div class="experience-card">
             <div class="job-title">SDET (Software Development Engineer in Test)</div>
             <div class="company">Skeps (Jun. 2024 - Present)</div>
@@ -239,7 +317,6 @@ redirect_from:
                 <li>Performed API and webhook testing to validate system functionalities, ensuring seamless loan facilitation.</li>
             </ul>
         </div>
-
         <div class="experience-card">
             <div class="job-title">Analyst</div>
             <div class="company">Studiographene (Mar. 2023 - Jun. 2024)</div>
@@ -270,52 +347,68 @@ redirect_from:
             </ul>
         </div>
     </div>
+    
 
     <div class="skills-section">
-        <h2>Skills</h2>
+        <h2>Technical Expertise</h2>
         <div class="skills-grid">
             <div class="skill-category">
                 <h3>Technical Skills</h3>
-                <ul>
-                    <li>UI Automation Testing</li>
-                    <li>Functional & API Testing</li>
-                    <li>White Box Testing</li>
-                    <li>Accessibility Testing</li>
-                </ul>
+                <div class="skill-list">
+                    <span class="skill-tag">UI Automation Testing</span>
+                    <span class="skill-tag">Functional & API Testing</span>
+                    <span class="skill-tag">White Box Testing</span>
+                    <span class="skill-tag">Accessibility Testing</span>
+                </div>
             </div>
             
             <div class="skill-category">
                 <h3>Soft Skills</h3>
-                <ul>
-                    <li>Critical Thinking</li>
-                    <li>Client Handling</li>
-                    <li>QA Documentation</li>
-                </ul>
+                <div class="skill-list">
+                    <span class="skill-tag">Critical Thinking</span>
+                    <span class="skill-tag">Client Handling</span>
+                    <span class="skill-tag">QA Documentation</span>
+                </div>
             </div>
             
             <div class="skill-category">
                 <h3>Tools & Frameworks</h3>
-                <ul>
-                    <li>Selenium, Pytest, BDD</li>
-                    <li>Python</li>
-                    <li>Git, Jenkins & Docker</li>
-                    <li>Katalon, Postbot</li>
-                    <li>Chat-GPT, Co-Pilot, Claude</li>
-                </ul>
+                <div class="skill-list">
+                    <span class="skill-tag">Selenium</span>
+                    <span class="skill-tag">Pytest</span>
+                    <span class="skill-tag">BDD</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Katalon</span>
+                    <span class="skill-tag">Postbot</span>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="education-section">
-        <h2>Education</h2>
-        <ul>
-            <li>B.Tech. (Hons.) in Computer Science Engineering, 2017</li>
-            <li>M.S. in Mathematics, Veer Bahadur Singh Purvanchal University, 2020</li>
-            <li>ISTQB CTFL Certification, July 2023</li>
-        </ul>
+        <h2>Education & Certifications</h2>
+        <div class="education-grid">
+            <div class="education-card">
+                <h3>B.Tech. (Hons.)</h3>
+                <p>Computer Science Engineering, 2017</p>
+            </div>
+            <div class="education-card">
+                <h3>M.S. Mathematics</h3>
+                <p>Veer Bahadur Singh Purvanchal University, 2020</p>
+            </div>
+            <div class="education-card">
+                <h3>ISTQB CTFL Certification</h3>
+                <p>July 2023</p>
+            </div>
+        </div>
     </div>
 
-    <a href="/files/Ujjwal_Kumar_Singh_3_Years_Experience_QA_Resume.pdf" class="download-button" download>
-        Download Resume
-    </a>
+    <div style="text-align: center;">
+        <a href="/files/Ujjwal_Kumar_Singh_3_Years_Experience_QA_Resume.pdf" class="download-button" download>
+            Download Complete Resume
+        </a>
+    </div>
 </div>
