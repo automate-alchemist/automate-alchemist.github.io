@@ -19,12 +19,13 @@ author_profile: true
   </header>
 
   <div class="timeline">
-    <!-- January 12th Entry -->
+    <!-- February 01st Entry -->
     <article class="timeline-entry" data-category="testing">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <div class="entry-header">
-          <span class="entry-date">12th January</span>
+          <span class="entry-date">01st February
+          </span>
           <span class="category-tag" role="button" data-category="testing">Testing</span>
         </div>
         <h2>AI Articles: Applications in Testing</h2>
@@ -43,7 +44,33 @@ author_profile: true
         </div>
       </div>
     </article>
+
+    <article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">2nd February</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>Pytest Framework: Utilities</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Explored utilities in the pytest framework.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Explored utilities in the pytest framework.</li>
+        <li><b>Description:</b> I focused on understanding pytest's utility functions, like pytest.mark.parametrize, which helps in running tests with multiple sets of inputs. I also explored custom utility functions to help with test setups and assertions.</li>
+        <li><b>Key Takeaway:</b> Utilizing pytest's built-in utilities like parametrize can significantly reduce the amount of code in tests and improve coverage. Custom utilities can further enhance the efficiency of test scripts.</li>
+        <li><b>Personal Reflection:</b> I find it useful to abstract repetitive logic into utility functions. It's a great way to simplify tests and maintain clean code.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
   </div>
+</article>
+  </div>
+
+
 
   <div class="archives-link">
     <a href="/wilt-january">View Previous Entries</a>
