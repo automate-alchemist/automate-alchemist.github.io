@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "What I Learned Today"
-permalink: /wilt/
+permalink: /wilt-january/
 author_profile: true
 ---
 
