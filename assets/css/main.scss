@@ -111,96 +111,38 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .test-laboratory {
-    .hero-section {
-      h1 {
-        font-size: 1.8em;
-      }
-      .typewriter p {
-        font-size: 1.1em;
-        white-space: nowrap;
-        padding: 0.5em 0;
-      }
-    }
-  }
+/* Updated MoT Badge Styling - No Other UI Impacted */
+.community-card, .mot-card {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: var(--hover-transition);
+  text-align: center;
+  flex-direction: column;
 }
 
-/* Adjusted Skills and Achievements Section */
-.skills-section {
-  margin-bottom: 3em;
-  .skill-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5em;
-    margin: 2em 0;
-  }
-  .skill-card {
-    background: var(--primary);
-    color: white;
-    padding: 0.8em 1.5em;
-    border-radius: 12px;
-    text-align: center;
-    transition: all 0.3s ease;
-    position: relative;
-    &:hover {
-      background: var(--accent);
-      transform: translateY(-5px) scale(1.05);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    }
-  }
+.mot-badge {
+  max-width: 80%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
 }
 
-.achievements-section {
-  margin-bottom: 3em;
-  .achievement-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-  }
-  .flip-card {
-    perspective: 1000px;
-    height: 150px;
-    &:hover .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-  }
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  .flip-card-front {
-    background: var(--primary);
-    color: white;
-    h3 {
-      margin: 0;
-      font-size: 1.3em;
-    }
-  }
-  .flip-card-back {
-    background: var(--light);
-    color: var(--primary);
-    transform: rotateY(180deg);
-    p {
-      margin: 0;
-      font-size: 1.1em;
-    }
-  }
+.mot-card:hover .mot-badge {
+  transform: scale(1.05);
+}
+
+/* Ensure Open Source Contributor text is clear */
+.community-card h3, .community-card p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+.community-card .icon {
+  font-size: 28px;
 }
