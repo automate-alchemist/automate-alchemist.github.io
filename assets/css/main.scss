@@ -9,14 +9,12 @@
  *  - https://twitter.com/mmistakes
  *
 */
-@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
-
 @import "reset";
 @import "base";
-
 @import "utilities";
 @import "animations";
 @import "tables";
@@ -26,13 +24,10 @@
 @import "navigation";
 @import "footer";
 @import "syntax";
-
 @import "forms";
-
 @import "page";
 @import "archive";
 @import "sidebar";
-
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
@@ -90,7 +85,6 @@
       border-right: 2px solid transparent;
       animation-delay: 0.5s;
     }
-
     .typewriter {
       p {
         font-size: 1.3em;
@@ -123,7 +117,6 @@
       h1 {
         font-size: 1.8em;
       }
-
       .typewriter p {
         font-size: 1.1em;
         white-space: nowrap;
@@ -131,18 +124,17 @@
       }
     }
   }
-} 
+}
 
+/* Adjusted Skills and Achievements Section */
 .skills-section {
   margin-bottom: 3em;
-
   .skill-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5em;
     margin: 2em 0;
   }
-
   .skill-card {
     background: var(--primary);
     color: white;
@@ -151,20 +143,6 @@
     text-align: center;
     transition: all 0.3s ease;
     position: relative;
-    
-    &::before {
-      content: '';
-      position: absolute;
-      left: 15px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 8px;
-      height: 8px;
-      background-color: var(--light);
-      border-radius: 50%;
-      animation: blink 1s infinite;
-    }
-
     &:hover {
       background: var(--accent);
       transform: translateY(-5px) scale(1.05);
@@ -175,23 +153,19 @@
 
 .achievements-section {
   margin-bottom: 3em;
-
   .achievement-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin: 2rem 0;
   }
-
   .flip-card {
     perspective: 1000px;
     height: 150px;
-    
     &:hover .flip-card-inner {
       transform: rotateY(180deg);
     }
   }
-
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -200,9 +174,7 @@
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-
-  .flip-card-front,
-  .flip-card-back {
+  .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -214,22 +186,18 @@
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
-
   .flip-card-front {
     background: var(--primary);
     color: white;
-    
     h3 {
       margin: 0;
       font-size: 1.3em;
     }
   }
-
   .flip-card-back {
     background: var(--light);
     color: var(--primary);
     transform: rotateY(180deg);
-    
     p {
       margin: 0;
       font-size: 1.1em;
