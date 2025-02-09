@@ -425,3 +425,27 @@
   }
   
   
+
+/* CSS in main.scss (already shared) */
+
+.mot-card {
+  width: 100%; /* Maintain same size */
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: var(--hover-transition);
+}
+
+.mot-badge {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mot-card:hover .mot-badge {
+  transform: scale(1.05); /* Retain hover effect */
+}
