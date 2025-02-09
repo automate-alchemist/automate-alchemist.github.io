@@ -70,12 +70,35 @@ redirect_from:
     <h3>Open Source Contributor</h3>
     <p>Actively contributing to open-source testing frameworks and tools to empower the QA community.</p>
   </div>
-  <div class="community-card">
-    <div class="icon">🤝</div>
-    <h3>Ministry of Testing Member</h3>
-    <p>Proud member sharing knowledge and innovative testing approaches with the global testing community.</p>
-  </div>
+
+<!-- Replace the current MoT card with the official badge -->
+<div class="card mot-card">
+    <img src="assets/images/mot_badge.jpg" alt="Ministry of Testing Badge" class="mot-badge" />
 </div>
+
+/* CSS in main.scss (already shared) */
+
+.mot-card {
+    width: 100%; /* Maintain same size */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: var(--hover-transition);
+}
+
+.mot-badge {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mot-card:hover .mot-badge {
+    transform: scale(1.05); /* Retain hover effect */
+}
 
   <div class="certifications-section">
     <h2>📜 Certifications</h2>
