@@ -72,7 +72,7 @@ redirect_from:
 
   <!-- Updated Ministry of Testing Badge -->
   <div class="card mot-card">
-      <img src="assets/images/mot-badge.png" alt="Ministry of Testing Badge" class="mot-badge" />
+      <img src="/images/mot_badge.jpg" alt="Ministry of Testing Badge" class="mot-badge" />
   </div>
 </div>
 
