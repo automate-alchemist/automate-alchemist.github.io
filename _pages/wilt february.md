@@ -225,22 +225,23 @@ author_profile: true
             <span class="entry-date">8th February</span>
             <span class="category-tag" role="button" data-category="testing">Testing</span>
         </div>
-        <h2>Open Source Contribution</h2>
+        <h2>Docker Fundamentals for Testing</h2>
         <div class="entry-preview">
-            <p><b>Learning:</b> Made first contribution to an open source testing project.</p>
+            <p><b>Learning:</b> Explored Docker basics for test environment setup.</p>
             <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
         </div>
         <div class="entry-full hidden">
             <ul>
-                <li><b>Learning:</b> Made first contribution to an open source testing project.</li>
-                <li><b>Description:</b> Started contributing to an open source testing framework. Focused on improving documentation and fixing minor bugs in the test utilities.</li>
-                <li><b>Key Takeaway:</b> Open source contribution is a great way to learn from experienced developers and improve coding skills.</li>
-                <li><b>Personal Reflection:</b> Though intimidating at first, contributing to open source is incredibly rewarding. Looking forward to more contributions.</li>
+                <li><b>Learning:</b> Explored Docker basics for test environment setup.</li>
+                <li><b>Description:</b> Started learning Docker fundamentals, focusing on containerization concepts and basic commands. Created my first Dockerfile for a test environment and learned about container management.</li>
+                <li><b>Key Takeaway:</b> Docker can solve the "it works on my machine" problem by providing consistent test environments across different systems.</li>
+                <li><b>Personal Reflection:</b> Docker seems complex at first, but its potential to streamline test environment setup is impressive. Looking forward to implementing it in our testing workflow.</li>
             </ul>
             <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
         </div>
     </div>
 </article>
+
 
 <article class="timeline-entry" data-category="testing">
     <div class="timeline-dot"></div>
@@ -273,22 +274,22 @@ author_profile: true
             <span class="entry-date">6th February</span>
             <span class="category-tag" role="button" data-category="testing">Testing</span>
         </div>
-        <h2>Open Source Contribution: Day 2</h2>
+        <h2>Jenkins Documentation Deep Dive</h2>
         <div class="entry-preview">
-            <p><b>Learning:</b> Continued open source contributions with feature enhancement.</p>
+            <p><b>Learning:</b> Studied Jenkins documentation for CI/CD implementation.</p>
             <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
         </div>
         <div class="entry-full hidden">
             <ul>
-                <li><b>Learning:</b> Continued open source contributions with feature enhancement.</li>
-                <li><b>Description:</b> Worked on implementing a new feature in the open source testing framework. Added support for parallel test execution and improved error handling.</li>
-                <li><b>Key Takeaway:</b> Collaborative development teaches valuable lessons about code review, documentation, and working with distributed teams.</li>
-                <li><b>Personal Reflection:</b> Each contribution helps me grow as a developer. The feedback from the community is invaluable.</li>
+                <li><b>Learning:</b> Studied Jenkins documentation for CI/CD implementation.</li>
+                <li><b>Description:</b> Spent time understanding Jenkins pipeline syntax, job configurations, and best practices through official documentation. Created detailed notes on pipeline creation and management.</li>
+                <li><b>Key Takeaway:</b> Proper understanding of Jenkins documentation is crucial for setting up efficient CI/CD pipelines and troubleshooting issues.</li>
+                <li><b>Personal Reflection:</b> Documentation study might seem boring, but it's essential for mastering tools. Found several features I didn't know existed.</li>
             </ul>
             <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
     </div>
-  </div> 
-  </article>
+</article>
 
 <article class="timeline-entry" data-category="testing">
     <div class="timeline-dot"></div>
@@ -342,20 +343,20 @@ author_profile: true
     <div class="timeline-dot"></div>
     <div class="timeline-content">
         <div class="entry-header">
-            <span class="entry-date">3rd February</span>
+            <span class="entry-date">4th February</span>
             <span class="category-tag" role="button" data-category="testing">Testing</span>
         </div>
-        <h2>Test Framework: Custom Reporting Tools</h2>
+        <h2>Testing Strategies Mind Map</h2>
         <div class="entry-preview">
-            <p><b>Learning:</b> Developed custom reporting tools for test framework.</p>
+            <p><b>Learning:</b> Created comprehensive mind maps for testing strategies.</p>
             <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
         </div>
         <div class="entry-full hidden">
             <ul>
-                <li><b>Learning:</b> Developed custom reporting tools for test framework.</li>
-                <li><b>Description:</b> Created specialized reporting utilities to generate comprehensive test execution reports. Implemented features for trend analysis and historical test data comparison.</li>
-                <li><b>Key Takeaway:</b> Custom reporting tools can significantly improve visibility into test results and help identify patterns in test failures.</li>
-                <li><b>Personal Reflection:</b> Building custom tools has enhanced my understanding of data visualization and reporting requirements in test automation.</li>
+                <li><b>Learning:</b> Created comprehensive mind maps for testing strategies.</li>
+                <li><b>Description:</b> Developed detailed mind maps covering various testing approaches including functional, non-functional, automation, and exploratory testing. Used XMind to organize and connect different testing concepts.</li>
+                <li><b>Key Takeaway:</b> Visual representation through mind maps helps in better understanding and planning of testing strategies. It's also a great way to identify gaps in test coverage.</li>
+                <li><b>Personal Reflection:</b> Mind mapping is an excellent tool for organizing testing knowledge. It helped me see connections I hadn't noticed before.</li>
             </ul>
             <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
         </div>
