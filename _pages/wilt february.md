@@ -19,6 +19,372 @@ author_profile: true
   </header>
 
   <div class="timeline">
+
+
+
+
+  
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">16th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Jenkins Integration with Pytest</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Started exploring mobile automation using Appium.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Started exploring mobile automation using Appium.</li>
+                <li><b>Description:</b> Today I began my journey into mobile automation by setting up Appium and understanding its architecture. I learned about the basic setup requirements, environment configurations, and how to identify mobile elements.</li>
+                <li><b>Key Takeaway:</b> Appium provides a powerful way to automate mobile applications across different platforms. The setup process is crucial for successful automation.</li>
+                <li><b>Personal Reflection:</b> Mobile automation opens up new possibilities in testing. While the initial setup seems complex, I'm excited about the potential it offers.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">15th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Jenkins Integration with Pytest</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Explored Jenkins integration with Pytest framework.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Explored Jenkins integration with Pytest framework.</li>
+                <li><b>Description:</b> Focused on setting up Jenkins pipelines for automated test execution using Pytest. Learned about configuring build triggers, managing test reports, and handling test failures in Jenkins.</li>
+                <li><b>Key Takeaway:</b> Jenkins integration can significantly improve the CI/CD pipeline by automating test execution and providing detailed test reports.</li>
+                <li><b>Personal Reflection:</b> The combination of Jenkins and Pytest creates a robust automation framework. It's fascinating to see how these tools work together.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">14th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Excel Data Integration in Pytest</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Implemented Excel data reading functionality in Pytest framework.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Implemented Excel data reading functionality in Pytest framework.</li>
+                <li><b>Description:</b> Added functionality to read test data from Excel files using pandas and openpyxl libraries. Created utility functions to handle different Excel formats and data structures.</li>
+                <li><b>Key Takeaway:</b> External data management through Excel makes test maintenance easier and allows non-technical team members to modify test data.</li>
+                <li><b>Personal Reflection:</b> This implementation will make our framework more flexible and maintainable. It's a practical solution for managing test data.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">13th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Buddha in Testing: Chapter Review</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Read and reflected on chapters from "Buddha in Testing" by Pradeep Soundarajan.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Read and reflected on chapters from "Buddha in Testing" by Pradeep Soundarajan.</li>
+                <li><b>Description:</b> Spent time understanding the philosophical approach to testing presented in the book. The author draws interesting parallels between Buddhist principles and software testing practices.</li>
+                <li><b>Key Takeaway:</b> Testing is not just about tools and techniques; it's about developing the right mindset and approach to problem-solving.</li>
+                <li><b>Personal Reflection:</b> The book offers a unique perspective on testing. It's refreshing to see testing discussed from a philosophical angle.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">12th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>AI Tools Exploration: Kusho AI</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Explored Kusho AI and its applications in testing.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Explored Kusho AI and its applications in testing.</li>
+                <li><b>Description:</b> Investigated how Kusho AI can be utilized in test automation. Explored its features for test case generation and optimization.</li>
+                <li><b>Key Takeaway:</b> AI tools like Kusho can significantly enhance test coverage and efficiency by suggesting test scenarios we might have missed.</li>
+                <li><b>Personal Reflection:</b> It's exciting to see how AI tools are evolving to support testing activities. This could be a game-changer for test automation.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">11th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Screenshot Implementation in Selenium</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Enhanced framework with screenshot capabilities.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Enhanced framework with screenshot capabilities.</li>
+                <li><b>Description:</b> Implemented automated screenshot capture for test failures using Selenium WebDriver. Added functionality to capture both full page and element-specific screenshots.</li>
+                <li><b>Key Takeaway:</b> Screenshots are crucial for debugging test failures. Proper implementation can save significant time in issue investigation.</li>
+                <li><b>Personal Reflection:</b> This feature will make our test reports more informative and help in quick problem resolution.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">10th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Article Writing for Medium</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Wrote an article about test automation best practices.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Wrote an article about test automation best practices.</li>
+                <li><b>Description:</b> Compiled my experiences and learning into an article for Medium. Focused on sharing practical tips and lessons learned in test automation.</li>
+                <li><b>Key Takeaway:</b> Writing about technical topics helps solidify understanding and can benefit others in the community.</li>
+                <li><b>Personal Reflection:</b> Creating content forces me to think deeply about the subject matter. It's a great way to contribute to the testing community.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">9th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>QABash Community Article</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Submitted technical article to QABash community.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Submitted technical article to QABash community.</li>
+                <li><b>Description:</b> Wrote and submitted an article about implementing test automation frameworks. Covered topics like framework design, best practices, and common pitfalls to avoid.</li>
+                <li><b>Key Takeaway:</b> Sharing knowledge with the community helps build connections and gather valuable feedback.</li>
+                <li><b>Personal Reflection:</b> Contributing to the QA community is rewarding. It's a great way to give back and learn from others' perspectives.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">8th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Open Source Contribution</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Made first contribution to an open source testing project.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Made first contribution to an open source testing project.</li>
+                <li><b>Description:</b> Started contributing to an open source testing framework. Focused on improving documentation and fixing minor bugs in the test utilities.</li>
+                <li><b>Key Takeaway:</b> Open source contribution is a great way to learn from experienced developers and improve coding skills.</li>
+                <li><b>Personal Reflection:</b> Though intimidating at first, contributing to open source is incredibly rewarding. Looking forward to more contributions.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">7th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Reporting Enhancement in Pytest</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Improved test reporting capabilities in Pytest framework.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Improved test reporting capabilities in Pytest framework.</li>
+                <li><b>Description:</b> Enhanced test reporting by implementing custom report templates and integrating with HTML reporting tools. Added detailed logging and failure analysis features.</li>
+                <li><b>Key Takeaway:</b> Good reporting is crucial for test maintenance and debugging. It helps in quick identification and resolution of issues.</li>
+                <li><b>Personal Reflection:</b> The enhanced reporting will make our test results more accessible to stakeholders. It's a significant improvement to our framework.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">6th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Open Source Contribution: Day 2</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Continued open source contributions with feature enhancement.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Continued open source contributions with feature enhancement.</li>
+                <li><b>Description:</b> Worked on implementing a new feature in the open source testing framework. Added support for parallel test execution and improved error handling.</li>
+                <li><b>Key Takeaway:</b> Collaborative development teaches valuable lessons about code review, documentation, and working with distributed teams.</li>
+                <li><b>Personal Reflection:</b> Each contribution helps me grow as a developer. The feedback from the community is invaluable.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div> 
+  </article>
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">5th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Buddha in Testing: Advanced Chapters</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Deep dive into advanced chapters of "Buddha in Testing".</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Deep dive into advanced chapters of "Buddha in Testing".</li>
+                <li><b>Description:</b> Explored advanced concepts from the book focusing on mindfulness in testing and how to approach complex testing scenarios with a clear mind.</li>
+                <li><b>Key Takeaway:</b> The importance of maintaining emotional balance and critical thinking while testing complex applications.</li>
+                <li><b>Personal Reflection:</b> The book's approach to combining spiritual principles with testing practices offers a unique perspective on quality assurance.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">4th February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Open Source Contribution: Bug Fixes</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Fixed bugs in open source test automation framework.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Fixed bugs in open source test automation framework.</li>
+                <li><b>Description:</b> Addressed several issues in the framework's core functionality, specifically around session handling and resource cleanup. Submitted pull requests with comprehensive test cases.</li>
+                <li><b>Key Takeaway:</b> Bug fixing in open source projects requires thorough understanding of the codebase and excellent communication with maintainers.</li>
+                <li><b>Personal Reflection:</b> Contributing to bug fixes has improved my debugging skills and understanding of test framework architecture.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">3rd February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Test Framework: Custom Reporting Tools</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Developed custom reporting tools for test framework.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Developed custom reporting tools for test framework.</li>
+                <li><b>Description:</b> Created specialized reporting utilities to generate comprehensive test execution reports. Implemented features for trend analysis and historical test data comparison.</li>
+                <li><b>Key Takeaway:</b> Custom reporting tools can significantly improve visibility into test results and help identify patterns in test failures.</li>
+                <li><b>Personal Reflection:</b> Building custom tools has enhanced my understanding of data visualization and reporting requirements in test automation.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+   <article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">2nd February</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>Pytest Framework: Utilities</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Explored utilities in the pytest framework.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Explored utilities in the pytest framework.</li>
+        <li><b>Description:</b> I focused on understanding pytest's utility functions, like pytest.mark.parametrize, which helps in running tests with multiple sets of inputs. I also explored custom utility functions to help with test setups and assertions.</li>
+        <li><b>Key Takeaway:</b> Utilizing pytest's built-in utilities like parametrize can significantly reduce the amount of code in tests and improve coverage. Custom utilities can further enhance the efficiency of test scripts.</li>
+        <li><b>Personal Reflection:</b> I find it useful to abstract repetitive logic into utility functions. It's a great way to simplify tests and maintain clean code.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
     <!-- February 01st Entry -->
     <article class="timeline-entry" data-category="testing">
       <div class="timeline-dot"></div>
@@ -45,29 +411,6 @@ author_profile: true
       </div>
     </article>
 
-    <article class="timeline-entry" data-category="testing">
-  <div class="timeline-dot"></div>
-  <div class="timeline-content">
-    <div class="entry-header">
-      <span class="entry-date">2nd February</span>
-      <span class="category-tag" role="button" data-category="testing">Testing</span>
-    </div>
-    <h2>Pytest Framework: Utilities</h2>
-    <div class="entry-preview">
-      <p><b>Learning:</b> Explored utilities in the pytest framework.</p>
-      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-    </div>
-    <div class="entry-full hidden">
-      <ul>
-        <li><b>Learning:</b> Explored utilities in the pytest framework.</li>
-        <li><b>Description:</b> I focused on understanding pytest's utility functions, like pytest.mark.parametrize, which helps in running tests with multiple sets of inputs. I also explored custom utility functions to help with test setups and assertions.</li>
-        <li><b>Key Takeaway:</b> Utilizing pytest's built-in utilities like parametrize can significantly reduce the amount of code in tests and improve coverage. Custom utilities can further enhance the efficiency of test scripts.</li>
-        <li><b>Personal Reflection:</b> I find it useful to abstract repetitive logic into utility functions. It's a great way to simplify tests and maintain clean code.</li>
-      </ul>
-      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-    </div>
-  </div>
-</article>
   </div>
 
 
