@@ -315,29 +315,7 @@ author_profile: true
     </div>
 </article>
 
-<article class="timeline-entry" data-category="testing">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <div class="entry-header">
-            <span class="entry-date">4th February</span>
-            <span class="category-tag" role="button" data-category="testing">Testing</span>
-        </div>
-        <h2>Open Source Contribution: Bug Fixes</h2>
-        <div class="entry-preview">
-            <p><b>Learning:</b> Fixed bugs in open source test automation framework.</p>
-            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-        </div>
-        <div class="entry-full hidden">
-            <ul>
-                <li><b>Learning:</b> Fixed bugs in open source test automation framework.</li>
-                <li><b>Description:</b> Addressed several issues in the framework's core functionality, specifically around session handling and resource cleanup. Submitted pull requests with comprehensive test cases.</li>
-                <li><b>Key Takeaway:</b> Bug fixing in open source projects requires thorough understanding of the codebase and excellent communication with maintainers.</li>
-                <li><b>Personal Reflection:</b> Contributing to bug fixes has improved my debugging skills and understanding of test framework architecture.</li>
-            </ul>
-            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-        </div>
-    </div>
-</article>
+
 
 <article class="timeline-entry" data-category="testing">
     <div class="timeline-dot"></div>
