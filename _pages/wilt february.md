@@ -340,7 +340,29 @@ author_profile: true
         </div>
     </div>
 </article>
-
+<article class="timeline-entry" data-category="testing">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">3rd February</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
+        </div>
+        <h2>Test Framework: Custom Reporting Tools</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Developed custom reporting tools for test framework.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Learning:</b> Developed custom reporting tools for test framework.</li>
+                <li><b>Description:</b> Created specialized reporting utilities to generate comprehensive test execution reports. Implemented features for trend analysis and historical test data comparison.</li>
+                <li><b>Key Takeaway:</b> Custom reporting tools can significantly improve visibility into test results and help identify patterns in test failures.</li>
+                <li><b>Personal Reflection:</b> Building custom tools has enhanced my understanding of data visualization and reporting requirements in test automation.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
    <article class="timeline-entry" data-category="testing">
   <div class="timeline-dot"></div>
   <div class="timeline-content">
