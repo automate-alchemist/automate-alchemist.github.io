@@ -63,32 +63,3 @@ redirect_from:
     </div>
   </div>
 
-<div class="community-grid">
-  <div class="community-card">
-    <div class="icon">🚀</div>
-    <h3>Open Source Contributor</h3>
-    <p>Actively contributing to open-source testing frameworks and tools to empower the QA community.</p>
-  </div>
-
-  <!-- Updated Ministry of Testing Badge -->
-  <div class="card mot-card">
-      <img src="/images/mot_badge.jpg" alt="Ministry of Testing Badge" class="mot-badge" />
-  </div>
-</div>
-
-
-
-  <div class="certifications-section">
-    <h2>📜 Certifications</h2>
-    <div class="cert-container">
-      <div class="cert-item glow-card">
-        <span>🎓 ISTQB Certified</span>
-        <small>July 2023</small>
-      </div>
-      <div class="cert-item glow-card">
-        <span>🌐 Accessibility Specialist</span>
-        <small>November 2024</small>
-      </div>
-    </div>
-  </div>
-</div>
